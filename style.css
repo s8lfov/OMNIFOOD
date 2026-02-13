@@ -72,8 +72,10 @@ header {
 
 .try {
   margin-top: -10px;
-  height: 40px;
-  width: 100px;
+  height: 42px;
+  width: 166px;
+  font-size: 18px;
+  line-height: 18px;
   color: var(--white);
   background-color: var(--accent);
   border: none;
@@ -125,8 +127,10 @@ header {
   margin: 30px 0px 40px 380px;
   color: var(--white);
   background-color: var(--accent);
+  font-size: 20px;
+  line-height: 20px;
   height: 40px;
-  width: 280px;
+  width: 346px;
   border: none;
   border-radius: 10px;
   justify-content: center;
@@ -143,8 +147,10 @@ header {
   margin: 30px 0px 40px 20px;
   color: var(--first_text);
   background-color: var(--white);
+  font-size: 20px;
+  line-height: 20px;
   height: 40px;
-  width: 140px;
+  width: 191px;
   border: none;
   border-radius: 10px;
   align-items: center;
@@ -498,7 +504,7 @@ header {
 .dish1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   height: 506px;
   width: 336px;
   border-radius: 10px;
@@ -524,7 +530,7 @@ header {
 }
 
 .dish_h3 h3 {
-  display: inline-block;
+  display: flex;
   text-align: center;
   height: 20px;
   width: 129px;
@@ -532,13 +538,13 @@ header {
   padding: 4px;
   background-color: var(--green);
   border-radius: 10px;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 20px 28px;
 }
 
 .dish_h2 h2 {
   font-size: 24px;
   color: #333;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 28px;
 }
 
 .list {
@@ -557,10 +563,28 @@ header {
   color: var(--second_text);
 }
 
+.calories,
+.nutri,
+.rating p {
+  text-indent: 0.25cm;
+}
+
+.calories {
+  margin-left: -5px;
+}
+
+.nutri {
+  margin-left: 16px;
+}
+
+.rating {
+  margin-left: 25px;
+}
+
 .dish2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   height: 506px;
   width: 336px;
   border-radius: 10px;
@@ -579,7 +603,7 @@ header {
 .dish3 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   height: 506px;
   width: 336px;
   border-radius: 10px;
@@ -612,7 +636,7 @@ header {
   padding: 4px;
   background-color: var(--light_green);
   border-radius: 10px;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 20px 28px;
 }
 
 .dish_h3_paleo {
@@ -643,6 +667,10 @@ header {
   display: flex;
   align-items: center;
   line-height: 22px;
+}
+
+.diets p {
+  text-indent: 0.25cm;
 }
 
 .all_receipes {
@@ -991,7 +1019,19 @@ h2 {
   align-items: center;
 }
 
+.roster p {
+  text-indent: 0.25cm;
+}
+
+.mark {
+  height: 24px;
+  width: 24px;
+  text-indent: 1.25cm;
+}
+
 .cross {
+  height: 12px;
+  width: 12px;
   margin-left: 5px;
 }
 
@@ -1004,7 +1044,7 @@ h2 {
   position: relative;
   text-align: center;
   padding: 5px;
-  top: 90px;
+  top: 80px;
   left: 154px;
   height: 30px;
   width: 246px;
@@ -1016,6 +1056,9 @@ h2 {
   display: flex;
   color: var(--white);
   background-color: var(--accent);
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
   height: 72px;
   width: 280px;
   border: none;
@@ -1179,8 +1222,13 @@ h2 {
   border: none;
   opacity: 1;
   border-radius: 10px;
+
   background-color: var(--bright_background);
   padding-left: 10px;
+}
+
+.form input:focus {
+  outline: 2px solid var(--dark_accent);
 }
 
 .send {
