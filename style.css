@@ -510,13 +510,12 @@ header {
   border-radius: 10px;
   background-color: var(--white);
   overflow: hidden;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 24px 48px 0px #00000013;
   transition: transform 1.2s ease-out;
 }
 
 .dish1:hover {
-  transform: scale(1.1);
-  transform: rotateY(360deg);
+  transform: translateY(-20px);
   cursor: pointer;
 }
 
@@ -590,13 +589,12 @@ header {
   border-radius: 10px;
   background-color: var(--white);
   overflow: hidden;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 24px 48px 0px #00000013;
   transition: transform 1.2s;
 }
 
 .dish2:hover {
-  transform: scale(1.1);
-  transform: rotateY(360deg);
+  transform: translateY(-20px);
   cursor: pointer;
 }
 
@@ -609,13 +607,12 @@ header {
   border-radius: 10px;
   background-color: var(--white);
   overflow: hidden;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 24px 48px 0px #00000013;
   transition: transform 1.2s;
 }
 
 .dish3:hover {
-  transform: scale(1.1);
-  transform: rotateY(360deg);
+  transform: translateY(-20px);
   cursor: pointer;
 }
 
@@ -666,11 +663,11 @@ header {
 .diets div {
   display: flex;
   align-items: center;
+  font-size: 18px;
   line-height: 22px;
-}
-
-.diets p {
-  text-indent: 0.25cm;
+  color: var(--second_text);
+  gap: 16px;
+  margin: 24px 0px 24px 0px;
 }
 
 .all_receipes {
@@ -888,7 +885,7 @@ h2 {
 .t_p:hover,
 .s_p:hover,
 .fo_p:hover {
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 24px 48px 0px #00000026;
   cursor: pointer;
 }
 
@@ -1168,7 +1165,7 @@ h2 {
   width: 1120px;
   background: linear-gradient(135deg, #eb984e 0%, #e67e22 100%);
   border-radius: 11px;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 24px 48px 0px #00000026;
   margin: 40px auto 100px auto;
 }
 
