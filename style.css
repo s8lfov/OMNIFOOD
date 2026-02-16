@@ -343,7 +343,7 @@ header {
   padding-left: 240px;
 }
 
-.step_img1 > img {
+.step_img1 img {
   height: 380px;
   width: 188px;
 }
@@ -388,7 +388,7 @@ header {
   flex-direction: row;
 }
 
-.step_img2 > img {
+.step_img2 img {
   height: 380px;
   width: 188px;
 }
@@ -429,7 +429,7 @@ header {
   padding-left: 240px;
 }
 
-.step_img3 > img {
+.step_img3 img {
   height: 380px;
   width: 188px;
 }
