@@ -33,6 +33,17 @@ body {
   color: #333;
 }
 
+a {
+  color: var(--first_text);
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--dark_accent);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -64,11 +75,6 @@ header {
   gap: 35px;
   font-size: 18px;
   color: var(--first_text);
-}
-
-.h_text:hover {
-  cursor: pointer;
-  color: var(--dark_accent);
 }
 
 .try {
@@ -1248,12 +1254,12 @@ h2 {
 
 .dinner_img {
   display: flex;
-  padding-left: 60px;
+  margin-left: 82px;
 }
 
-.dinner_img img {
+.dinner_img {
   height: 584px;
-  width: 400px;
+  width: 378px;
   border-top-right-radius: 11px;
   border-bottom-right-radius: 11px;
   opacity: 0.7;
