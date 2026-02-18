@@ -1,11 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
-  <title>OMNIFOOD</title>
+  <meta name="viewport" content="width=device-width, initial">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css">
   <link rel="icon" href="icons/apple.png" type="image/x-icon" />
+  <title>OMNIFOOD</title>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
                                 image/x400/logo_400.webp  400w,
                                 image/x800/logo_800.webp  800w,
                                 image/x1200/logo_1200.webp 1200w
-                              " type="image/webp" sizes="200px" />
+                              " type="image/webp" sizes="20rem" />
           <img src="image/x800/logo_800.webp" alt="Логотип компании" loading="lazy" class="logo_img" />
         </picture>
       </a>
@@ -43,43 +45,45 @@
           питаться здорово. Подстраивается под ваши вкусы и потребности в
           питании.
         </div>
-        <button class="eat">Начать правильно питаться</button>
-        <button class="more">Подробнее &darr;</button>
+        <div class="hero_buttons">
+          <button class="eat">Начать правильно питаться</button>
+          <button class="more">Подробнее &darr;</button>
+        </div>
         <div class="avatars">
           <picture>
             <source srcset="image/x80/first_ava_80.webp 80w,
                                 image/x160/first_ava_160.webp 160w,
-                                image/x320/first_ava_320.webp 320w" type="image/webp" sizes="40px">
+                                image/x320/first_ava_320.webp 320w" type="image/webp" sizes="4rem">
             <img src="image/160/first_ava_160.webp" alt="Аватар 1" loading="lazy" class="first_img">
           </picture>
           <picture>
             <source srcset="image/x80/second_ava_80.webp 80w,
                                 image/x160/second_ava_160.webp 160w,
-                                image/x320/second_ava_320.webp 320w" type="image/webp" sizes="40px">
+                                image/x320/second_ava_320.webp 320w" type="image/webp" sizes="4rem">
             <img src="image/x160/second_ava_160.webp" alt="Аватар 2" loading="lazy" class="second_img">
           </picture>
           <picture>
             <source srcset="image/x80/third_ava_80.webp 80w,
                                 image/x160/third_ava_160.webp 160w,
-                                image/x320/third_ava_320.webp 320w" type="image/webp" sizes="40px">
+                                image/x320/third_ava_320.webp 320w" type="image/webp" sizes="4rem">
             <img src="image/x160/third_ava_160.webp" alt="Аватар 3" loading="lazy" class="third_img">
           </picture>
           <picture>
             <source srcset="image/x80/fourth_ava_80.webp 80w,
                                 image/x160/fourth_ava_160.webp 160w,
-                                image/x320/fourth_ava_320.webp 320w" type="image/webp" sizes="40px">
+                                image/x320/fourth_ava_320.webp 320w" type="image/webp" sizes="4rem">
             <img src="image/x160/fourth_ava_160.webp" alt="Аватар 4" loading="lazy" class="fourth_img">
           </picture>
           <picture>
             <source srcset="image/x80/fifth_ava_80.webp 80w,
                                 image/x160/fifth_ava_160.webp 160w,
-                                image/x320/fifth_ava_320.webp 320w" type="image/webp" sizes="40px">
+                                image/x320/fifth_ava_320.webp 320w" type="image/webp" sizes="4rem">
             <img src="image/x160/fifth_ava_160.webp" alt="Аватар 5" loading="lazy" class="fifth_img">
           </picture>
           <picture>
             <source srcset="image/x80/sixth_ava_80.webp 80w,
                                 image/x160/sixth_ava_160.webp 160w,
-                                image/x320/sixth_ava_320.webp 320w" type="image/webp" sizes="40px">
+                                image/x320/sixth_ava_320.webp 320w" type="image/webp" sizes="4rem">
             <img src="image/160/sixth_ava_160.webp" alt="Аватар 5" loading="lazy" class="sixth_img">
           </picture>
           <div class="deliveries">
@@ -100,43 +104,44 @@
         </div>
       </div>
     </div>
+
     <div class="recomend">
       <div class="r_text">НАС УПОМИНАЮТ</div>
       <div class="rec_images">
         <picture>
           <source srcset="image/x200/TechCrunch_200.png 200w,
                                 image/x400/TechCrunch_400.png 400w,
-                                image/x800/TechCrunch_800.png 800w" type="image/png" sizes="150px">
+                                image/x800/TechCrunch_800.png 800w" type="image/png" sizes="15rem">
           <img src="image/x400/TechCrunch_400.png" alt="TechCrunch" loading="lazy" class="crunch">
         </picture>
         <picture>
           <source srcset="image/x200/Business insider_200.png 200w,
                                 image/x400/Business insider_400.png 400w,
-                                image/x800/Business insider_800.png 800w" type="image/png" sizes="150px">
+                                image/x800/Business insider_800.png 800w" type="image/png" sizes="15rem">
           <img src="image/x400/Business insider_400.png" alt="Business insider" loading="lazy" class="b_i">
         </picture>
         <picture>
           <source srcset="image/x200/TheNY_Times_200.png 200w,
                                 image/x400/TheNY_Times_400.png 400w,
-                                image/x800/TheNY_Times_800.png 800w" type="image/png" sizes="150px">
+                                image/x800/TheNY_Times_800.png 800w" type="image/png" sizes="15rem">
           <img src="image/x400/TheNY_Times_400.png" alt="The New-York Times" loading="lazy" class="times">
         </picture>
         <picture>
           <source srcset="image/x200/Forbes_200.png 200w,
                                 image/x400/Forbes_400.png 400w,
-                                image/x800/Forbes_800.png 800w" type="image/png" sizes="150px">
+                                image/x800/Forbes_800.png 800w" type="image/png" sizes="15rem">
           <img src="image/x400/Forbes_400.png" alt="Forbes" loading="lazy" class="forbes">
         </picture>
         <picture>
           <source srcset="image/x200/USA_today_200.png 200w,
                                 image/x400/USA_today_400.png 400w,
-                                image/x800/USA_today_800.png 800w" type="image/png" sizes="150px">
+                                image/x800/USA_today_800.png 800w" type="image/png" sizes="15rem">
           <img src="image/x400/USA_today_400.png" alt="USA TODAY" loading="lazy" class="usa_today">
         </picture>
       </div>
     </div>
     <div class="how_work" id="explain_work">
-      <div class="hw_text">Как это работает</div>
+      <div class="hw_text">КАК ЭТО РАБОТАЕТ</div>
       <div class="explain">
         Ваша ежедневная доза здоровья в 3 простых шага
       </div>
@@ -159,7 +164,7 @@
             <source srcset="image/x400/step1_400.png 400w,
                                 image/x800/step1_800.png 800w,
                                 image/x1200/step1_1200.png 1200w" type="image/png"
-              sizes="(max-width: 768px) 100vw, 300px">
+              sizes="(max-width: 76.8rem) 100vw, 30rem">
             <img src="image/x800/step1_800.png" alt="Phone 1" loading="lazy">
           </picture>
         </div>
@@ -179,7 +184,7 @@
             <source srcset="image/x400/step2_400.png 400w,
                                 image/x800/step2_800.png 800w,
                                 image/x1200/step2_1200.png 1200w" type="image/png"
-              sizes="(max-width: 768px) 100vw, 300px">
+              sizes="(max-width: 76.8rem) 100vw, 30rem">
             <img src="image/x800/step2_800.png" alt="Phone 2" loading="lazy">
           </picture>
         </div>
@@ -199,7 +204,7 @@
             <source srcset="image/x400/step3_400.png 400w,
                                 image/x800/step3_800.png 800w,
                                 image/x1200/step3_1200.png 1200w" type="image/png"
-              sizes="(max-width: 768px) 100vw, 300px">
+              sizes="(max-width: 76.8rem) 100vw, 30rem">
             <img src="image/x800/step3_800.png" alt="Phone 3" loading="lazy">
           </picture>
         </div>
@@ -220,7 +225,7 @@
                                 image/x400/dish1_400.webp  400w,
                                 image/x800/dish1_800.webp  800w,
                                 image/x1200/dish1_1200.webp 1200w
-                              " type="image/webp" sizes="(max-width: 768px) 100vw, 50vw" />
+                              " type="image/webp" sizes="(max-width: 76.8rem) 100vw, 50vw" />
             <img src=" image/x800/dish1_800.webp" alt="Блюдо 1" loading="lazy" class="d1_img" />
           </picture>
         </div>
@@ -252,7 +257,7 @@
                                 image/x400/dish2_400.webp  400w,
                                 image/x800/dish2_800.webp  800w,
                                 image/x1200/dish2_1200.webp 1200w
-                              " type="image/webp" sizes="(max-width: 768px) 100vw, 50vw" />
+                              " type="image/webp" sizes="(max-width: 76.8rem) 100vw, 50vw" />
             <img src="image/x800/dish2_800.webp" alt="Блюдо 2" loading="lazy" class="d2_img" />
           </picture>
         </div>
@@ -283,7 +288,7 @@
                                 image/x400/dish3_400.webp  400w,
                                 image/x800/dish3_800.webp  800w,
                                 image/x1200/dish3_1200.webp 1200w
-                              " type="image/webp" sizes="(max-width: 768px) 100vw, 50vw" />
+                              " type="image/webp" sizes="(max-width: 76.8rem) 100vw, 50vw" />
           <img src="image/800/dish3_800.webp" alt="Блюдо 3" loading="lazy" class="d3_img" />
         </picture>
         <div class="dish3_container">
@@ -377,7 +382,7 @@
                 <picture>
                   <source srcset="image/x80/Dave_80.jpg 80w,
                                 image/x160/Dave_160.jpg 160w,
-                                image/x800/Dave_800.jpg 320w" type="image/jpeg" sizes="50px">
+                                image/x800/Dave_800.jpg 320w" type="image/jpeg" sizes="5rem">
                   <img src="image/x160/Dave_160.jpg" alt="Аватарка Dave" loading="lazy" class="dave">
                 </picture>
               </div>
@@ -392,7 +397,7 @@
                 <picture>
                   <source srcset="image/x80/Steve_80.jpg 80w,
                                 image/x160/Steve_160.jpg 160w,
-                                image/x320/Steve_320.jpg 320w" type="image/jpeg" sizes="50px">
+                                image/x320/Steve_320.jpg 320w" type="image/jpeg" sizes="5rem">
                   <img src="image/x160/Steve_160.jpg" alt="Аватарка Steve" loading="lazy" class="steve">
                 </picture>
               </div>
@@ -410,7 +415,7 @@
                 <picture>
                   <source srcset="image/x80/Ben_80.jpg 80w,
                                 image/x160/Ben_160.jpg 160w,
-                                image/x320/Ben_320.jpg 320w" type="image/jpeg" sizes="50px">
+                                image/x320/Ben_320.jpg 320w" type="image/jpeg" sizes="5rem">
                   <img src="image/x160/Ben.jpg" alt="Аватарка Ben" loading="lazy" class="ben">
                 </picture>
               </div>
@@ -426,7 +431,7 @@
                 <picture>
                   <source srcset="image/x80/Hannah_80.jpg 80w,
                                 image/x160/Hannah_160.jpg 160w,
-                                image/x320/Hannah_320.jpg 320w" type="image/jpeg" sizes="50px">
+                                image/x320/Hannah_320.jpg 320w" type="image/jpeg" sizes="5rem">
                   <img src="image/x160/Hannah_160.jpg" alt="Аватарка Hanna" loading="lazy" class="hanna">
                 </picture>
               </div>
@@ -661,7 +666,7 @@
           </div>
           <div class="form">
             <p>Откуда вы получили информацию о нас?</p>
-            <input type="text" placeholder="Кто рекомендовал?" required />
+            <input type="text" placeholder="Ссылка на источник" required />
           </div>
           <input type="submit" class="send" />
         </form>
@@ -672,7 +677,7 @@
                                 image/x400/dinner_400.webp  400w,
                                 image/x800/dinner_800.webp  800w,
                                 image/x1200/dinner_1200.webp 1200w
-                              " type="image/webp" sizes="(max-width: 768px) 100vw, 50vw" />
+                              " type="image/webp" sizes="(max-width: 76.8rem) 100vw, 50vw" />
           <img src="image/x800/dinner_800.webp" alt="Изображение женщины с нашим блюдом" loading="lazy"
             class="dinner_img" />
         </picture>
