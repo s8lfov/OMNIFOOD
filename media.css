@@ -1,29 +1,353 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
-@import url(style.css);
-
 @media (max-width: 1440px) {
-  html {
-    font-size: 9.5px;
-  }
+  /* HEADER */
+
   header {
-    height: 8.5rem;
-    width: 151rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    height: 8rem;
+    width: 144rem;
+    padding: 0 4.8rem 0 4.8rem;
+  }
+
+  .logo_img {
+    height: 2.4rem;
+    width: 16.4rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .nav-container {
+    height: 4.2rem;
+    width: 71rem;
+    gap: 4.8rem;
+  }
+
+  /* HERO */
+
+  .hero {
+    height: 71.8rem;
+    width: 144rem;
+    padding: 4.8rem 7rem 9.6rem 7rem;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+  }
+
+  .slogan {
+    font-size: 5.2rem;
+    line-height: 5.46rem;
+    height: 21.9rem;
+    width: 57.4rem;
+    margin: 0;
+  }
+
+  .under_text {
+    margin: 4rem 0 4rem 0;
+    height: 9.6rem;
+    width: 57rem;
+  }
+
+  .eat {
+    margin: 0;
+  }
+
+  .more {
+    margin: 0;
+    color: var(--second_text);
+    margin-left: 1rem;
+  }
+
+  .avatars {
+    margin: 0;
+    height: 4.8rem;
+    width: 57rem;
+    margin: 8rem 0 0 2rem;
+  }
+
+  .right {
+    height: 56.5rem;
+    width: 57rem;
+  }
+
+  .coll {
+    margin: 0;
+  }
+
+  /* HOW WORK */
+
+  .how_work {
+    padding: 0;
+  }
+
+  .titles {
+    padding: 0 12.5rem;
+    gap: 1.6rem;
+  }
+
+  .explain {
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+
+  .steps {
+    height: 133rem;
+    width: 120rem;
+    max-width: 120rem;
+  }
+
+  .step {
+    padding: 4rem 0 4rem 12rem;
+  }
+
+  .step_img1:before {
+    top: 126rem;
+    left: 99rem;
+  }
+
+  .step.reverse {
+    padding-right: 0;
+  }
+
+  .step_img2::before {
+    top: 172rem;
+    right: 80rem;
+  }
+
+  .step_img3:before {
+    top: 220rem;
+    left: 99rem;
+  }
+
+  .recipes {
+    margin-top: 10rem;
+  }
+
+  .dishes {
+    gap: 3rem;
+    padding: 0 0 0 2rem;
+  }
+
+  .o_text {
+    padding: 9.6rem 0 4rem 6rem;
+  }
+
+  .try_once {
+    width: 60rem;
+  }
+
+  .try_once h2 {
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 5.28rem;
+    width: 60rem;
+  }
+
+  .left_side {
+    flex: none;
+  }
+
+  .f_p,
+  .t_p,
+  .s_p,
+  .fo_p {
+    width: 26rem;
+  }
+
+  .f_p h2,
+  .t_p h2,
+  .s_p h2,
+  .fo_p h2 {
+    width: inherit;
+  }
+
+  .t_p,
+  .fo_p {
+    padding-top: 4rem;
+  }
+
+  .right_gallery {
+    height: 85.8rem;
+    width: 64.8rem;
+    margin: 22rem 0 0 0;
+  }
+
+  .gallery {
+    padding-right: 0;
+    grid-template-rows: repeat(4, 20rem);
+  }
+
+  .gallery div {
+    height: 19.4rem;
+    width: 19.4rem;
+  }
+
+  /* PRICE */
+
+  .price_block {
+    margin: 6rem 0 6rem 20rem;
+  }
+
+  .price h3 {
+    font-weight: medium;
+  }
+
+  .price_card {
+    margin: 0;
+  }
+
+  .tariffs {
+    margin: 2rem 0 2rem 0;
+  }
+
+  .dinner_free {
+    margin: 8rem auto 14rem auto;
+  }
+
+  .d_text h3 {
+    height: 9.8rem;
+    width: 62.9rem;
+  }
+
+  .dinner_img {
+    height: 58.4rem;
+    width: 37.8rem;
+    margin-left: 5.4rem;
   }
 }
 
-@media (max-width: 1200px) {
-  html {
-    font-size: 10px;
-  }
+@media (max-width: 1024px) {
   header {
     height: 7.2rem;
     width: 102.4rem;
+    padding: 0 2.88rem 0 2.88rem;
   }
+
   .logo_img {
     height: 2rem;
     width: 14rem;
+  }
+
+  /* HERO */
+
+  .hero {
+    height: 65.021rem;
+    width: 102.4rem;
+    padding: 4.8rem 2rem 9.6rem 2rem;
+    gap: 4.318rem;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 52rem;
+    width: 46.1rem;
+  }
+
+  .slogan {
+    font-size: 3.96rem;
+    height: 12.5rem;
+    width: 46.1rem;
+  }
+
+  .under_text {
+    height: 11.6rem;
+    width: 43.4rem;
+    font-size: 1.8rem;
+    line-height: 2.88rem;
+    margin: 4rem 0 2rem 0;
+  }
+
+  .eat {
+    height: 4.68rem;
+    width: 31.16rem;
+  }
+
+  .more {
+    height: 4.68rem;
+    width: 17.16rem;
+    margin-left: 0;
+  }
+
+  .ava_container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 3.3rem;
+  }
+
+  .avatars {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 4.319rem;
+    width: 18.714rem;
+    margin: 0 0 0 2rem;
+  }
+
+  .first_img,
+  .second_img,
+  .third_img,
+  .fourth_img,
+  .fifth_img,
+  .sixth_img {
+    height: 4.319rem;
+    width: 4.319rem;
+  }
+
+  .deliveries {
+    display: inline-block;
+    font-size: 1.62rem;
+    line-height: 1.62rem;
+    height: 3.3rem;
+    width: 25.1rem;
+    margin: 1rem 0 0 -4rem;
+  }
+
+  .orange {
+    padding-right: 0.4rem;
+  }
+
+  .right {
+    height: 45.5rem;
+    width: 46.1rem;
+  }
+
+  .coll {
+    height: 45.545rem;
+    width: 46.161rem;
+  }
+
+  /* HOW WORK */
+
+  .titles {
+    padding: 0 2rem;
+    height: 6.838rem;
+    width: 102.4rem;
+  }
+
+  .explain {
+    font-size: 3.24rem;
+    line-height: 3.888rem;
+  }
+
+  .steps {
+    height: 111.244rem;
+    width: 102.4rem;
+    max-width: 108rem;
+  }
+
+  .step {
+    padding: 4rem 0 4rem 2rem;
+  }
+
+  .step_img1 {
+    padding-left: 12rem;
+  }
+
+  .step_img1:before {
+    top: 117rem;
+    left: 77rem;
   }
 }
 

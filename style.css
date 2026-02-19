@@ -181,10 +181,15 @@ header {
   transform: scale(1.1);
 }
 
+.ava_container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0 4rem 40rem;
+}
+
 .avatars {
   display: inline-flex;
   flex-wrap: wrap;
-  margin: 2rem 0 4rem 40rem;
   height: max-content;
   width: max-content;
 }
@@ -204,7 +209,7 @@ header {
 
 .deliveries {
   color: var(--first_text);
-  margin: 2rem 0 4rem 2rem;
+  margin: 2rem 0 0 2rem;
   font-size: 1.8rem;
 }
 
