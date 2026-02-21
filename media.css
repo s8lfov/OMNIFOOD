@@ -57,11 +57,14 @@
     margin-left: 1rem;
   }
 
-  .avatars {
-    margin: 0;
+  .ava_container {
     height: 4.8rem;
     width: 57rem;
     margin: 8rem 0 0 2rem;
+  }
+
+  .avatars {
+    margin: 0;
   }
 
   .right {
@@ -77,6 +80,7 @@
 
   .how_work {
     padding: 0;
+    margin-top: 8rem;
   }
 
   .titles {
@@ -100,7 +104,7 @@
   }
 
   .step_img1:before {
-    top: 126rem;
+    top: 136rem;
     left: 99rem;
   }
 
@@ -109,17 +113,19 @@
   }
 
   .step_img2::before {
-    top: 172rem;
+    top: 182rem;
     right: 80rem;
   }
 
   .step_img3:before {
-    top: 220rem;
+    top: 226rem;
     left: 99rem;
   }
 
+  /* RECIPES */
+
   .recipes {
-    margin-top: 10rem;
+    margin-top: 20rem;
   }
 
   .dishes {
@@ -142,6 +148,8 @@
     width: 60rem;
   }
 
+  /* REVIEWS */
+
   .left_side {
     flex: none;
   }
@@ -160,9 +168,12 @@
     width: inherit;
   }
 
-  .t_p,
   .fo_p {
-    padding-top: 4rem;
+    margin: 8rem 0 8rem 10rem;
+  }
+
+  .t_p {
+    margin: 8rem 0 8rem 6rem;
   }
 
   .right_gallery {
@@ -346,26 +357,926 @@
   }
 
   .step_img1:before {
-    top: 117rem;
+    top: 124rem;
     left: 77rem;
   }
-}
 
-@media (max-width: 992px) {
-  html {
-    font-size: 8.5px;
+  .step_img2:before {
+    top: 172rem;
+    right: 56rem;
+  }
+
+  .step_img3 {
+    padding-left: 12rem;
+  }
+
+  .step_img3:before {
+    top: 218rem;
+    left: 76rem;
+  }
+
+  /* RECIPES */
+
+  .recipes {
+    margin-top: 40rem;
+  }
+
+  .dishes {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 0 10rem;
+  }
+
+  .review_block {
+    height: 135.37rem;
+    width: 102.4rem;
+  }
+
+  .left_profiles {
+    height: 108.288rem;
+    width: 56.319rem;
+  }
+
+  .o_text {
+    height: 1.5rem;
+    width: 50.559rem;
+    font-size: 1.44rem;
+    font-weight: 500;
+    line-height: 1.44rem;
+    padding: 9.6rem 0 4rem 2rem;
+  }
+
+  .try_once {
+    height: 11.7rem;
+    width: 50.559rem;
+    font-size: 3.24rem;
+    line-height: 3.888rem;
+    padding-left: 2rem;
+  }
+
+  .try_once h2 {
+    font-size: 3.24rem;
+    line-height: 3.888rem;
+    width: 50.559rem;
+  }
+
+  .peoples {
+    height: 75.15rem;
+    width: 50.559rem;
+  }
+
+  .f_p,
+  .t_p,
+  .s_p,
+  .fo_p {
+    height: 33.225rem;
+    width: 21.68rem;
+  }
+
+  .f_p {
+    margin: 4rem 0 4rem 2rem;
+  }
+
+  .t_p {
+    height: 30.328rem;
+    margin: 12rem 0 12rem 2rem;
+  }
+
+  .s_p {
+    height: 33.278rem;
+    margin: 4rem 0 4rem 6rem;
+  }
+
+  .fo_p {
+    height: 30.328rem;
+    margin: 8rem 0 8rem 6rem;
+  }
+
+  .right_gallery {
+    height: 135.37rem;
+    width: 46.081rem;
+    margin: 4rem 0 4rem 12rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+    padding-right: 0;
+  }
+
+  .gallery div {
+    height: 18rem;
+    width: 18rem;
+  }
+
+  .gallery img {
+    height: 18rem;
+    width: 18rem;
+  }
+
+  /* PRICE */
+
+  .price_block {
+    margin: 10rem 0 10rem 4rem;
+  }
+
+  .price_card {
+    margin: 0 0 0 10rem;
+    justify-content: flex-start;
+  }
+
+  .tariffs_text {
+    font-size: 1.44rem;
+    line-height: 2.3rem;
+  }
+
+  .tariffs {
+    height: 31.333rem;
+    width: 102.4rem;
+    margin: 2rem 0 24rem 0;
+  }
+
+  .t1,
+  .t2,
+  .t3,
+  .t4 {
+    width: 20.92rem;
+  }
+
+  .t2 {
+    padding-top: 12rem;
+  }
+
+  .t3 {
+    padding-top: 2rem;
+  }
+
+  .t4 {
+    padding-top: 14rem;
+  }
+
+  .t1 h2,
+  .t2 h2,
+  .t3 h2,
+  .t4 h2 {
+    font-size: 2.16rem;
+    line-height: 2.16rem;
+  }
+
+  .t1 h3 {
+    width: 20.6rem;
+  }
+
+  .t2 h3 {
+    width: 20.5rem;
+  }
+
+  .t3 h3 {
+    width: 20.4rem;
+  }
+
+  .t4 h3 {
+    width: 18.8rem;
+  }
+
+  .dinner_free {
+    height: 53.679rem;
+    width: 96.641rem;
+  }
+
+  .dinner_img {
+    height: 53.679rem;
+    width: 32.213rem;
+    margin-left: 1rem;
+  }
+
+  .d_text h2 {
+    width: 52.907rem;
+    font-size: 3.24rem;
+    line-height: 3.888rem;
+  }
+
+  .d_text h3 {
+    width: 52.907rem;
+    font-size: 1.62rem;
+    line-height: 2.916rem;
+  }
+
+  .form_container {
+    margin: 4rem 0 4rem 0;
+  }
+
+  .form {
+    height: 6.638rem;
+    width: 25.014rem;
+  }
+
+  #form_special {
+    height: 8.3rem;
+    width: 25.014rem;
+  }
+
+  .send {
+    height: 4.26rem;
+  }
+
+  .basement {
+    padding: 4.8rem 2rem;
+  }
+
+  .second_column {
+    width: 19.272rem;
+  }
+
+  .third_column,
+  .fourth_column {
+    width: 12.847rem;
+  }
+
+  .fifth_column {
+    width: 15.128rem;
   }
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 8px;
-  }
-}
+  /* HEADER */
 
-@media (max-width: 576px) {
-  html {
-    font-size: 7.5px;
+  header {
+    height: 6.4rem;
+    width: 76.8rem;
+    padding: 0 2.559rem 0 2.559rem;
+  }
+
+  .logo_img {
+    height: 1.759rem;
+    width: 13.081rem;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    top: -1.4rem;
+    right: 2.559rem;
+  }
+
+  .hamburger {
+    display: flex;
+    margin: 3rem 0 0 56rem;
+    visibility: visible;
+    font-size: 2.6rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .nav-container {
+    visibility: hidden;
+  }
+
+  #menu-toggle:checked ~ .nav-container {
+    display: flex;
+    position: absolute;
+    top: 7.4rem;
+    left: 39rem;
+    flex-direction: column;
+    background-color: var(--white);
+    visibility: visible;
+    height: 32rem;
+    width: 20rem;
+    padding: 2rem 0 2rem 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  #menu-toggle:checked ~ .hamburger::before {
+    content: "✕";
+    font-size: 2.6rem;
+  }
+  #menu-toggle:checked ~ .hamburger {
+    content: "";
+    font-size: 0;
+  }
+  #menu-toggle:checked ~ .hamburger::before {
+    font-size: 3rem;
+  }
+
+  .try {
+    height: max-content;
+    width: max-content;
+    padding: 1rem 2rem;
+  }
+
+  /* BODY */
+
+  .hero {
+    height: 84.192rem;
+    width: 76.8rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 4.8rem 2rem 9.6rem 7rem;
+  }
+
+  .left {
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+  }
+
+  .slogan {
+    text-align: center;
+    height: 7.4rem;
+    width: 64rem;
+    font-size: 3.52rem;
+    line-height: 3.696rem;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
+  }
+
+  .under_text {
+    text-align: center;
+    font-size: 1.6rem;
+    height: 5.2rem;
+    width: 64rem;
+    line-height: 2.56rem;
+    font-weight: 400;
+    margin: 0 0 4rem 0;
+  }
+
+  .hero_buttons {
+    margin: 3rem 0 4rem 7rem;
+    gap: 2rem;
+  }
+
+  .ava_container {
+    height: 3.839rem;
+    width: 64rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatars {
+    height: 3.839rem;
+    width: 16.634rem;
+    margin: 0;
+  }
+
+  .deliveries {
+    height: 1.5rem;
+    width: max-content;
+    font-size: 1.44rem;
+    line-height: 1.44rem;
+    margin: 2rem 0 0 0;
+  }
+
+  .right {
+    height: 38.088rem;
+    width: 64rem;
+    align-items: center;
+  }
+
+  .coll {
+    height: 37.888rem;
+    width: 38.4rem;
+  }
+
+  /* RECOMEND */
+
+  .recomend {
+    height: 5.038rem;
+    width: 76.8rem;
+    padding-top: 14rem;
+  }
+
+  .r_text {
+    font-size: 1.12rem;
+    line-height: 1.12rem;
+  }
+
+  .crunch,
+  .b_i,
+  .times,
+  .forbes,
+  .usa_today {
+    height: 1.919rem;
+  }
+
+  .crunch {
+    width: 13.478rem;
+  }
+
+  .b_i {
+    width: 6.044rem;
+  }
+
+  .times {
+    width: 14.606rem;
+  }
+
+  .forbes {
+    width: 7.339rem;
+  }
+
+  .usa_today {
+    width: 10.264rem;
+  }
+
+  .how_work {
+    font-size: 1.28rem;
+  }
+
+  .explain {
+    height: 7rem;
+    width: 71.68rem;
+    font-size: 2.88rem;
+    line-height: 3.456rem;
+  }
+
+  .step {
+    padding: 8rem 0 4rem 2rem;
+  }
+
+  .text > h2 {
+    font-size: 5.92rem;
+    line-height: 5.92rem;
+  }
+
+  .text > h3 {
+    font-size: 1.92rem;
+    line-height: 1.92rem;
+    width: 33.92rem;
+  }
+
+  .text > p {
+    font-size: 1.44rem;
+    line-height: 2.592rem;
+    width: 33.92rem;
+  }
+
+  .step_img1:before {
+    top: 146rem;
+    left: 57rem;
+  }
+
+  .step.reverse {
+    padding-right: 26rem;
+  }
+
+  .step_img2 {
+    margin-right: -10rem;
+  }
+
+  .step_img2:before {
+    top: 200rem;
+    right: 26rem;
+  }
+
+  .step_img2::after {
+    top: 8rem;
+  }
+
+  .step_img3:before {
+    top: 246rem;
+    left: 57rem;
+  }
+
+  .recipes {
+    margin-top: 50rem;
+  }
+
+  .recipes_text > h3 {
+    font-size: 1.28rem;
+    line-height: 1.28rem;
+    height: 1.3rem;
+    width: max-content;
+  }
+
+  .recipes_text > h2 {
+    height: 7rem;
+    width: 71.5rem;
+    font-size: 2.88rem;
+    line-height: 3.456rem;
+  }
+
+  .dishes {
+    padding: 0 0 0 10rem;
+  }
+
+  .dish1,
+  .dish2,
+  .dish3 {
+    height: 38.999rem;
+    width: 21.333rem;
+  }
+
+  .d1_img,
+  .d2_img,
+  .d3_img {
+    height: 14.233rem;
+    width: 21.333rem;
+  }
+
+  .dish_h3 {
+    height: 1.64rem;
+    width: 16.213rem;
+    margin-bottom: 4rem;
+  }
+
+  .dish_h3 h3 {
+    font-size: 0.96rem;
+  }
+
+  .dish_h2 h2 {
+    font-size: 1.92rem;
+    line-height: 1.92rem;
+  }
+
+  .list p {
+    font-size: 1.44rem;
+    line-height: 1.44rem;
+  }
+
+  .calories img,
+  .nutri img,
+  .rating img {
+    height: 1.919rem;
+    width: 1.919rem;
+  }
+
+  .dish_h3_vegan {
+    height: 1.64rem;
+    width: 7.08rem;
+    font-size: 0.96rem;
+    line-height: 0.96rem;
+  }
+
+  .dish_h3_paleo {
+    height: 1.64rem;
+    width: 4.68rem;
+    font-size: 0.96rem;
+    line-height: 0.96rem;
+  }
+
+  .plus h3 {
+    font-size: 1.92rem;
+    line-height: 2.3rem;
+    font-weight: 700;
+  }
+
+  .diets div {
+    font-size: 1.44rem;
+    line-height: 1.728rem;
+    font-weight: 400;
+    margin: 1.4rem 0;
+  }
+
+  .mark {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  /* REVIEWS */
+
+  .review_block {
+    height: 101.235rem;
+    width: 76.8rem;
+    flex-direction: column;
+  }
+
+  .o_text {
+    font-size: 1.28rem;
+    line-height: 1.28rem;
+    font-weight: 500;
+    padding: 6rem 0 4rem 2rem;
+  }
+
+  .try_once {
+    height: 7rem;
+    width: 71.68rem;
+  }
+
+  .try_once h2 {
+    font-size: 2.88rem;
+    line-height: 3.456rem;
+    width: 71.68rem;
+  }
+
+  .peoples {
+    height: 48.722rem;
+    width: 71.68rem;
+  }
+
+  .f_p,
+  .t_p,
+  .s_p,
+  .fo_p {
+    height: max-content;
+    width: max-content;
+  }
+
+  .dave,
+  .steve,
+  .ben,
+  .hanna {
+    height: 5.119rem;
+    width: 5.119rem;
+  }
+
+  .f_p h2,
+  .s_p h2,
+  .t_p h2,
+  .fo_p h2 {
+    font-size: 1.44rem;
+    width: 32.641rem;
+  }
+
+  .f_p h3,
+  .s_p h3,
+  .t_p h3,
+  .fo_p h3 {
+    font-size: 1.28rem;
+    line-height: 1.28rem;
+    width: 32.641rem;
+  }
+
+  .t_p {
+    margin: 1rem 0 4rem 2rem;
+  }
+
+  .fo_p {
+    margin: -2rem 0 0 6rem;
+  }
+
+  .right_gallery {
+    margin: 10rem 0 10rem 1rem;
+  }
+
+  .gallery {
+    height: 26.455rem;
+    width: 76.8rem;
+    grid-template-columns: repeat(6, 11.306rem);
+    grid-template-rows: repeat(2, 11.306rem);
+    gap: 1.5rem;
+  }
+
+  .gallery div {
+    height: 11.306rem;
+    width: 11.306rem;
+  }
+
+  .gallery img {
+    height: 11.306rem;
+    width: 11.306rem;
+  }
+
+  .price h3 {
+    font-size: 1.28rem;
+    line-height: 1.28rem;
+    height: 1.3rem;
+    width: 71.68rem;
+  }
+
+  .eat_fine h2 {
+    font-size: 2.88rem;
+    line-height: 34.56rem;
+    height: 3.5rem;
+    width: 71.68rem;
+  }
+
+  /* PRICE */
+
+  .price_card {
+    height: 54.032rem;
+    width: 76.8rem;
+  }
+
+  .p_card1,
+  .p_card2 {
+    height: 54.032rem;
+    width: 25.439rem;
+  }
+
+  .p_card1 h3,
+  .p_card2 h3 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+  }
+
+  .ruble_value {
+    font-size: 4.96rem;
+    line-height: 4.96rem;
+    margin-bottom: 0;
+  }
+
+  .ruble {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  .p_card1 h4,
+  .p_card2 h4 {
+    font-size: 1.28rem;
+    line-height: 2.048rem;
+    height: 4.1rem;
+    width: 21.68rem;
+  }
+
+  .accent {
+    top: 6rem;
+    left: 8.4rem;
+  }
+
+  .roster {
+    margin: 2rem 0 0 0;
+  }
+
+  .roster p {
+    font-size: 1.44rem;
+    line-height: 1.728rem;
+    width: 18rem;
+    text-indent: 0;
+    padding-left: 0.25rem;
+  }
+
+  .eat2 {
+    height: 7.36rem;
+    width: 17.68rem;
+    margin-top: 0;
+  }
+
+  /* TARIFFS */
+
+  .tariffs_text {
+    font-size: 1.28rem;
+    line-height: 2.048rem;
+    width: 71.681rem;
+    text-align: center;
+    padding-left: 6rem;
+  }
+
+  .tariffs {
+    height: 33.064rem;
+    width: 76.8rem;
+  }
+
+  .t1,
+  .t2,
+  .t3 {
+    width: 14.967rem;
+  }
+
+  .t2 {
+    padding-top: 6rem;
+  }
+
+  .t3 {
+    padding-top: 0;
+  }
+
+  .t4 {
+    width: 15.264rem;
+    padding-top: 5rem;
+  }
+
+  .t1 h2,
+  .t2 h2,
+  .t3 h2,
+  .t4 h2 {
+    font-size: 1.92rem;
+    line-height: 1.92rem;
+  }
+
+  .t1 h2 {
+    width: 10.8rem;
+  }
+
+  .t2 h2 {
+    width: 13.9rem;
+  }
+
+  .t3 h2 {
+    width: 12.1rem;
+  }
+
+  .t4 h2 {
+    width: 15.3rem;
+  }
+
+  .t1 h3,
+  .t2 h3,
+  .t3 h3,
+  .t4 h3 {
+    font-size: 1.44rem;
+    line-height: 2.592rem;
+  }
+
+  .t1 h3 {
+    width: 14.8rem;
+  }
+
+  .t2 h3 {
+    width: 13.5rem;
+  }
+
+  .t3 h3 {
+    width: 13.8rem;
+  }
+
+  .t4 h3 {
+    width: 15.1rem;
+  }
+
+  /* DINNER */
+
+  .dinner_free {
+    height: 63.526rem;
+    width: 71.681rem;
+  }
+
+  .d_text {
+    padding: 0 0 0 4rem;
+  }
+
+  .d_text h2 {
+    font-size: 2.88rem;
+    line-height: 3.456rem;
+    width: 32.768rem;
+    font-weight: 700;
+  }
+
+  .d_text h3 {
+    font-size: 1.44rem;
+    line-height: 2.592rem;
+    width: 32.768rem;
+  }
+
+  .form_container {
+    grid-template-columns: 0;
+    gap: 1rem;
+  }
+
+  .form {
+    font-size: 1.28rem;
+    line-height: 1.28rem;
+  }
+
+  .form input {
+    height: 3.819rem;
+    width: 32.768rem;
+  }
+
+  .send {
+    height: 3.819rem;
+    width: 32.768rem;
+    margin-top: 0;
+  }
+
+  .dinner_img {
+    height: 63.526rem;
+    width: 28.673rem;
+    margin-left: 6.2rem;
+  }
+
+  /* FOOTER */
+
+  footer {
+    width: 76.8rem;
+  }
+
+  .basement p {
+    font-size: 1.28rem;
+    line-height: 1.28rem;
+    width: 10rem;
+  }
+
+  .basement h2 {
+    font-size: 1.44rem;
+    line-height: 1.44rem;
+  }
+
+  .basement h3 {
+    font-size: 1.44rem;
+    line-height: 1.44rem;
+    width: 12rem;
+  }
+
+  .first_column {
+    width: 14rem;
+  }
+
+  .second_column {
+    width: 9rem;
+  }
+
+  .third_column {
+    width: 6rem;
+  }
+
+  .fourth_column {
+    width: 10rem;
+  }
+
+  .fifth_column {
+    width: 12rem;
   }
 }
 

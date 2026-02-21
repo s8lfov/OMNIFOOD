@@ -1,744 +1,818 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="media.css">
-  <link rel="icon" href="icons/apple.png" type="image/x-icon" />
-  <title>OMNIFOOD</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="icons/apple.png" type="image/x-icon" />
+    <title>OMNIFOOD</title>
+  </head>
 
-<body>
-  <header id="anchor_logo">
-    <div class="logo">
-      <a href="#anchor_logo">
-        <picture>
-          <source srcset="
+  <body>
+    <header id="anchor_logo">
+      <div class="logo">
+        <a href="#anchor_logo">
+          <picture>
+            <source srcset="
                                 image/x400/logo_400.webp  400w,
                                 image/x800/logo_800.webp  800w,
                                 image/x1200/logo_1200.webp 1200w
                               " type="image/webp" sizes="20rem" />
-          <img src="image/x800/logo_800.webp" alt="Логотип компании" loading="lazy" class="logo_img" />
-        </picture>
-      </a>
-    </div>
-    <nav>
-      <div class="nav-container">
-        <div class="h_text"><a href="#explain_work">Как это работает</a></div>
-        <div class="h_text"><a href="#anchor_recipes">Рецепты</a></div>
-        <div class="h_text"><a href="#anchor_reviews">Отзывы</a></div>
-        <div class="h_text"><a href="#anchor_price">Цены</a></div>
-        <button type="button" class="try">Попробовать</button>
+            <img src="image/x800/logo_800.webp" alt="Логотип компании"
+              loading="lazy" class="logo_img" />
+          </picture>
+        </a>
       </div>
-    </nav>
-  </header>
-  <main>
-    <div class="hero">
-      <div class="left">
-        <div class="slogan">
-          Здоровая еда доставляется к вашей двери каждый день
+      <nav class="wrapper">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
+        <div class="nav-container">
+          <div class="h_text"><a href="#explain_work">Как это
+              работает</a></div>
+          <div class="h_text"><a href="#anchor_recipes">Рецепты</a></div>
+          <div class="h_text"><a href="#anchor_reviews">Отзывы</a></div>
+          <div class="h_text"><a href="#anchor_price">Цены</a></div>
+          <button type="button" class="try">Попробовать</button>
         </div>
-        <div class="under_text">
-          Умная подписка на еду 365 дней в году, которая заставит вас снова
-          питаться здорово. Подстраивается под ваши вкусы и потребности в
-          питании.
-        </div>
-        <div class="hero_buttons">
-          <button class="eat">Начать правильно питаться</button>
-          <button class="more">Подробнее &darr;</button>
-        </div>
-        <div class="ava_container">
-          <div class="avatars">
-            <picture>
-              <source srcset="image/x80/first_ava_80.webp 80w,
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="left">
+          <div class="slogan">
+            Здоровая еда доставляется к вашей двери каждый день
+          </div>
+          <div class="under_text">
+            Умная подписка на еду 365 дней в году, которая заставит вас снова
+            питаться здорово. Подстраивается под ваши вкусы и потребности в
+            питании.
+          </div>
+          <div class="hero_buttons">
+            <button class="eat">Начать правильно питаться</button>
+            <button class="more">Подробнее &darr;</button>
+          </div>
+          <div class="ava_container">
+            <div class="avatars">
+              <picture>
+                <source srcset="image/x80/first_ava_80.webp 80w,
                                 image/x160/first_ava_160.webp 160w,
-                                image/x320/first_ava_320.webp 320w" type="image/webp" sizes="4rem">
-              <img src="image/160/first_ava_160.webp" alt="Аватар 1" loading="lazy" class="first_img">
-            </picture>
-            <picture>
-              <source srcset="image/x80/second_ava_80.webp 80w,
+                                image/x320/first_ava_320.webp 320w"
+                  type="image/webp" sizes="4rem">
+                <img src="image/160/first_ava_160.webp" alt="Аватар 1"
+                  loading="lazy" class="first_img">
+              </picture>
+              <picture>
+                <source srcset="image/x80/second_ava_80.webp 80w,
                                 image/x160/second_ava_160.webp 160w,
-                                image/x320/second_ava_320.webp 320w" type="image/webp" sizes="4rem">
-              <img src="image/x160/second_ava_160.webp" alt="Аватар 2" loading="lazy" class="second_img">
-            </picture>
-            <picture>
-              <source srcset="image/x80/third_ava_80.webp 80w,
+                                image/x320/second_ava_320.webp 320w"
+                  type="image/webp" sizes="4rem">
+                <img src="image/x160/second_ava_160.webp" alt="Аватар 2"
+                  loading="lazy" class="second_img">
+              </picture>
+              <picture>
+                <source srcset="image/x80/third_ava_80.webp 80w,
                                 image/x160/third_ava_160.webp 160w,
-                                image/x320/third_ava_320.webp 320w" type="image/webp" sizes="4rem">
-              <img src="image/x160/third_ava_160.webp" alt="Аватар 3" loading="lazy" class="third_img">
-            </picture>
-            <picture>
-              <source srcset="image/x80/fourth_ava_80.webp 80w,
+                                image/x320/third_ava_320.webp 320w"
+                  type="image/webp" sizes="4rem">
+                <img src="image/x160/third_ava_160.webp" alt="Аватар 3"
+                  loading="lazy" class="third_img">
+              </picture>
+              <picture>
+                <source srcset="image/x80/fourth_ava_80.webp 80w,
                                 image/x160/fourth_ava_160.webp 160w,
-                                image/x320/fourth_ava_320.webp 320w" type="image/webp" sizes="4rem">
-              <img src="image/x160/fourth_ava_160.webp" alt="Аватар 4" loading="lazy" class="fourth_img">
-            </picture>
-            <picture>
-              <source srcset="image/x80/fifth_ava_80.webp 80w,
+                                image/x320/fourth_ava_320.webp 320w"
+                  type="image/webp" sizes="4rem">
+                <img src="image/x160/fourth_ava_160.webp" alt="Аватар 4"
+                  loading="lazy" class="fourth_img">
+              </picture>
+              <picture>
+                <source srcset="image/x80/fifth_ava_80.webp 80w,
                                 image/x160/fifth_ava_160.webp 160w,
-                                image/x320/fifth_ava_320.webp 320w" type="image/webp" sizes="4rem">
-              <img src="image/x160/fifth_ava_160.webp" alt="Аватар 5" loading="lazy" class="fifth_img">
-            </picture>
-            <picture>
-              <source srcset="image/x80/sixth_ava_80.webp 80w,
+                                image/x320/fifth_ava_320.webp 320w"
+                  type="image/webp" sizes="4rem">
+                <img src="image/x160/fifth_ava_160.webp" alt="Аватар 5"
+                  loading="lazy" class="fifth_img">
+              </picture>
+              <picture>
+                <source srcset="image/x80/sixth_ava_80.webp 80w,
                                 image/x160/sixth_ava_160.webp 160w,
-                                image/x320/sixth_ava_320.webp 320w" type="image/webp" sizes="4rem">
-              <img src="image/160/sixth_ava_160.webp" alt="Аватар 5" loading="lazy" class="sixth_img">
-            </picture>
-          </div>
-          <div class="deliveries">
-            <span class="orange">250,000+</span> доставок в прошлом году
+                                image/x320/sixth_ava_320.webp 320w"
+                  type="image/webp" sizes="4rem">
+                <img src="image/160/sixth_ava_160.webp" alt="Аватар 5"
+                  loading="lazy" class="sixth_img">
+              </picture>
+            </div>
+            <div class="deliveries">
+              <span class="orange">250,000+</span> доставок в прошлом году
+            </div>
           </div>
         </div>
-      </div>
-      <div class="right">
-        <div class="collage">
-          <picture>
-            <source srcset="
+        <div class="right">
+          <div class="collage">
+            <picture>
+              <source srcset="
                                 image/x400/collage_400.webp  400w,
                                 image/x800/collage_800.webp  800w,
                                 image/x1200/collage_1200.webp 1200w
                               " type="image/webp" sizes="100vw" />
-            <img src="image/x800/collage_800.webp" alt="Коллаж" loading="lazy" class="coll" />
-          </picture>
+              <img src="image/x800/collage_800.webp" alt="Коллаж" loading="lazy"
+                class="coll" />
+            </picture>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="recomend">
-      <div class="r_text">НАС УПОМИНАЮТ</div>
-      <div class="rec_images">
-        <picture>
-          <source srcset="image/x200/TechCrunch_200.png 200w,
+      <div class="recomend">
+        <div class="r_text">НАС УПОМИНАЮТ</div>
+        <div class="rec_images">
+          <picture>
+            <source srcset="image/x200/TechCrunch_200.png 200w,
                                 image/x400/TechCrunch_400.png 400w,
-                                image/x800/TechCrunch_800.png 800w" type="image/png" sizes="15rem">
-          <img src="image/x400/TechCrunch_400.png" alt="TechCrunch" loading="lazy" class="crunch">
-        </picture>
-        <picture>
-          <source srcset="image/x200/Business insider_200.png 200w,
+                                image/x800/TechCrunch_800.png 800w"
+              type="image/png" sizes="15rem">
+            <img src="image/x400/TechCrunch_400.png" alt="TechCrunch"
+              loading="lazy" class="crunch">
+          </picture>
+          <picture>
+            <source srcset="image/x200/Business insider_200.png 200w,
                                 image/x400/Business insider_400.png 400w,
-                                image/x800/Business insider_800.png 800w" type="image/png" sizes="15rem">
-          <img src="image/x400/Business insider_400.png" alt="Business insider" loading="lazy" class="b_i">
-        </picture>
-        <picture>
-          <source srcset="image/x200/TheNY_Times_200.png 200w,
+                                image/x800/Business insider_800.png 800w"
+              type="image/png" sizes="15rem">
+            <img src="image/x400/Business insider_400.png"
+              alt="Business insider" loading="lazy" class="b_i">
+          </picture>
+          <picture>
+            <source srcset="image/x200/TheNY_Times_200.png 200w,
                                 image/x400/TheNY_Times_400.png 400w,
-                                image/x800/TheNY_Times_800.png 800w" type="image/png" sizes="15rem">
-          <img src="image/x400/TheNY_Times_400.png" alt="The New-York Times" loading="lazy" class="times">
-        </picture>
-        <picture>
-          <source srcset="image/x200/Forbes_200.png 200w,
+                                image/x800/TheNY_Times_800.png 800w"
+              type="image/png" sizes="15rem">
+            <img src="image/x400/TheNY_Times_400.png" alt="The New-York Times"
+              loading="lazy" class="times">
+          </picture>
+          <picture>
+            <source srcset="image/x200/Forbes_200.png 200w,
                                 image/x400/Forbes_400.png 400w,
-                                image/x800/Forbes_800.png 800w" type="image/png" sizes="15rem">
-          <img src="image/x400/Forbes_400.png" alt="Forbes" loading="lazy" class="forbes">
-        </picture>
-        <picture>
-          <source srcset="image/x200/USA_today_200.png 200w,
+                                image/x800/Forbes_800.png 800w" type="image/png"
+              sizes="15rem">
+            <img src="image/x400/Forbes_400.png" alt="Forbes" loading="lazy"
+              class="forbes">
+          </picture>
+          <picture>
+            <source srcset="image/x200/USA_today_200.png 200w,
                                 image/x400/USA_today_400.png 400w,
-                                image/x800/USA_today_800.png 800w" type="image/png" sizes="15rem">
-          <img src="image/x400/USA_today_400.png" alt="USA TODAY" loading="lazy" class="usa_today">
-        </picture>
-      </div>
-    </div>
-    <div class="how_work" id="explain_work">
-      <div class="titles">
-        <div class="hw_text">КАК ЭТО РАБОТАЕТ</div>
-        <div class="explain">
-          Ваша ежедневная доза здоровья в 3 простых шага
+                                image/x800/USA_today_800.png 800w"
+              type="image/png" sizes="15rem">
+            <img src="image/x400/USA_today_400.png" alt="USA TODAY"
+              loading="lazy" class="usa_today">
+          </picture>
         </div>
       </div>
-    </div>
+      <div class="how_work" id="explain_work">
+        <div class="titles">
+          <div class="hw_text">КАК ЭТО РАБОТАЕТ</div>
+          <div class="explain">
+            Ваша ежедневная доза здоровья в 3 простых шага
+          </div>
+        </div>
+      </div>
 
-    <div class="steps">
-      <div class="step">
-        <div class="text">
-          <h2>01</h2>
-          <h3>Расскажите нам, что вам нравится (и что не нравится)</h3>
-          <p>
-            Больше не тратьте время на размышления о том, что есть! Omnifood
-            AI создаст для вас на 100% персонализированный еженедельный план
-            питания. Он гарантирует, что вы получите все необходимые
-            питательные вещества и витамины, независимо от вашей диеты!
-          </p>
-        </div>
-        <div class="step_img1">
-          <picture>
-            <source srcset="image/x400/step1_400.png 400w,
+      <div class="steps">
+        <div class="step">
+          <div class="text">
+            <h2>01</h2>
+            <h3>Расскажите нам, что вам нравится (и что не нравится)</h3>
+            <p>
+              Больше не тратьте время на размышления о том, что есть! Omnifood
+              AI создаст для вас на 100% персонализированный еженедельный план
+              питания. Он гарантирует, что вы получите все необходимые
+              питательные вещества и витамины, независимо от вашей диеты!
+            </p>
+          </div>
+          <div class="step_img1">
+            <picture>
+              <source srcset="image/x400/step1_400.png 400w,
                                 image/x800/step1_800.png 800w,
-                                image/x1200/step1_1200.png 1200w" type="image/png"
-              sizes="(max-width: 76.8rem) 100vw, 30rem">
-            <img src="image/x800/step1_800.png" alt="Phone 1" loading="lazy">
-          </picture>
+                                image/x1200/step1_1200.png 1200w"
+                type="image/png"
+                sizes="(max-width: 76.8rem) 100vw, 30rem">
+              <img src="image/x800/step1_800.png" alt="Phone 1" loading="lazy">
+            </picture>
+          </div>
         </div>
-      </div>
-      <div class="step reverse">
-        <div class="text">
-          <h2>02</h2>
-          <h3>Утвердите свой еженедельный план питания</h3>
-          <p>
-            Раз в неделю утверждайте план питания, сгенерированный для вас
-            Omnifood AI. Вы можете менять ингредиенты, заменять целые блюда
-            или даже добавлять свои собственные рецепты.
-          </p>
-        </div>
-        <div class="step_img2">
-          <picture>
-            <source srcset="image/x400/step2_400.png 400w,
+        <div class="step reverse">
+          <div class="text">
+            <h2>02</h2>
+            <h3>Утвердите свой еженедельный план питания</h3>
+            <p>
+              Раз в неделю утверждайте план питания, сгенерированный для вас
+              Omnifood AI. Вы можете менять ингредиенты, заменять целые блюда
+              или даже добавлять свои собственные рецепты.
+            </p>
+          </div>
+          <div class="step_img2">
+            <picture>
+              <source srcset="image/x400/step2_400.png 400w,
                                 image/x800/step2_800.png 800w,
-                                image/x1200/step2_1200.png 1200w" type="image/png"
-              sizes="(max-width: 76.8rem) 100vw, 30rem">
-            <img src="image/x800/step2_800.png" alt="Phone 2" loading="lazy">
-          </picture>
+                                image/x1200/step2_1200.png 1200w"
+                type="image/png"
+                sizes="(max-width: 76.8rem) 100vw, 30rem">
+              <img src="image/x800/step2_800.png" alt="Phone 2" loading="lazy">
+            </picture>
+          </div>
         </div>
-      </div>
-      <div class="step">
-        <div class="text">
-          <h2>03</h2>
-          <h3>Получайте еду в удобное время</h3>
-          <p>
-            Лучшие повара города будут готовить выбранное вами блюдо каждый
-            день, и мы доставим его к вашей двери в удобное для вас время. Вы
-            можете ежедневно менять график и адрес доставки!
-          </p>
-        </div>
-        <div class="step_img3">
-          <picture>
-            <source srcset="image/x400/step3_400.png 400w,
+        <div class="step">
+          <div class="text">
+            <h2>03</h2>
+            <h3>Получайте еду в удобное время</h3>
+            <p>
+              Лучшие повара города будут готовить выбранное вами блюдо каждый
+              день, и мы доставим его к вашей двери в удобное для вас время. Вы
+              можете ежедневно менять график и адрес доставки!
+            </p>
+          </div>
+          <div class="step_img3">
+            <picture>
+              <source srcset="image/x400/step3_400.png 400w,
                                 image/x800/step3_800.png 800w,
-                                image/x1200/step3_1200.png 1200w" type="image/png"
-              sizes="(max-width: 76.8rem) 100vw, 30rem">
-            <img src="image/x800/step3_800.png" alt="Phone 3" loading="lazy">
-          </picture>
+                                image/x1200/step3_1200.png 1200w"
+                type="image/png"
+                sizes="(max-width: 76.8rem) 100vw, 30rem">
+              <img src="image/x800/step3_800.png" alt="Phone 3" loading="lazy">
+            </picture>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="recipes" id="anchor_recipes">
-      <div class="recipes_text">
-        <h3>ПРИЕМ ПИЩИ</h3>
-        <h2>Система Omnifood AI выбирает из более чем 5000 рецептов</h2>
+      <div class="recipes" id="anchor_recipes">
+        <div class="recipes_text">
+          <h3>ПРИЕМ ПИЩИ</h3>
+          <h2>Система Omnifood AI выбирает из более чем 5000 рецептов</h2>
+        </div>
       </div>
-    </div>
 
-    <div class="dishes">
-      <div class="dish1">
-        <div>
-          <picture>
-            <source srcset="
+      <div class="dishes">
+        <div class="dish1">
+          <div>
+            <picture>
+              <source srcset="
                                 image/x400/dish1_400.webp  400w,
                                 image/x800/dish1_800.webp  800w,
                                 image/x1200/dish1_1200.webp 1200w
-                              " type="image/webp" sizes="(max-width: 76.8rem) 100vw, 50vw" />
-            <img src=" image/x800/dish1_800.webp" alt="Блюдо 1" loading="lazy" class="d1_img" />
-          </picture>
-        </div>
-        <div class="dish_h3">
-          <h3>ВЕГЕТАРИАНСКОЕ</h3>
-        </div>
-        <div class="dish_h2">
-          <h2>Японские Гёдза</h2>
-        </div>
-        <div class="list">
-          <div class="calories">
-            <img src="icons/flame.png" alt="иконка киллокалории" />
-            <p><strong>650</strong>&nbsp;калорий</p>
+                              " type="image/webp"
+                sizes="(max-width: 76.8rem) 100vw, 50vw" />
+              <img src=" image/x800/dish1_800.webp" alt="Блюдо 1" loading="lazy"
+                class="d1_img" />
+            </picture>
           </div>
-          <div class="nutri">
-            <img src="icons/eat.png" alt="иконка еды" />
-            <p>NutriScore &reg;&nbsp;<strong>74</strong></p>
+          <div class="dish_h3">
+            <h3>ВЕГЕТАРИАНСКОЕ</h3>
           </div>
-          <div class="rating">
-            <img src="icons/star.png" alt="иконка звездочки" />
-            <p><strong>4.9</strong>&nbsp;рейтинг (537)</p>
+          <div class="dish_h2">
+            <h2>Японские Гёдза</h2>
+          </div>
+          <div class="list">
+            <div class="calories">
+              <img src="icons/flame.png" alt="иконка киллокалории" />
+              <p><strong>650</strong>&nbsp;калорий</p>
+            </div>
+            <div class="nutri">
+              <img src="icons/eat.png" alt="иконка еды" />
+              <p>NutriScore &reg;&nbsp;<strong>74</strong></p>
+            </div>
+            <div class="rating">
+              <img src="icons/star.png" alt="иконка звездочки" />
+              <p><strong>4.9</strong>&nbsp;рейтинг (537)</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="dish2">
-        <div>
-          <picture>
-            <source srcset="
+        <div class="dish2">
+          <div>
+            <picture>
+              <source srcset="
                                 image/x400/dish2_400.webp  400w,
                                 image/x800/dish2_800.webp  800w,
                                 image/x1200/dish2_1200.webp 1200w
-                              " type="image/webp" sizes="(max-width: 76.8rem) 100vw, 50vw" />
-            <img src="image/x800/dish2_800.webp" alt="Блюдо 2" loading="lazy" class="d2_img" />
-          </picture>
-        </div>
-        <div class="dish_h3">
-          <h3>ПЕСКЕТАРТАНСКАЯ</h3>
-        </div>
-        <div class="dish_h2">
-          <h2>Филе красной рыбы</h2>
-        </div>
-        <div class="list">
-          <div class="calories">
-            <img src="icons/flame.png" alt="иконка киллокалории" />
-            <p><strong>1413</strong>&nbsp;калорий</p>
+                              " type="image/webp"
+                sizes="(max-width: 76.8rem) 100vw, 50vw" />
+              <img src="image/x800/dish2_800.webp" alt="Блюдо 2" loading="lazy"
+                class="d2_img" />
+            </picture>
           </div>
-          <div class="nutri">
-            <img src="icons/eat.png" alt="иконка еды" />
-            <p>NutriScore &reg;&nbsp;<strong>48</strong></p>
+          <div class="dish_h3">
+            <h3>ПЕСКЕТАРТАНСКАЯ</h3>
           </div>
-          <div class="rating">
-            <img src="icons/star.png" alt="иконка звездочки" />
-            <p><strong>4.2</strong>&nbsp;рейтинг (671)</p>
+          <div class="dish_h2">
+            <h2>Филе красной рыбы</h2>
+          </div>
+          <div class="list">
+            <div class="calories">
+              <img src="icons/flame.png" alt="иконка киллокалории" />
+              <p><strong>1413</strong>&nbsp;калорий</p>
+            </div>
+            <div class="nutri">
+              <img src="icons/eat.png" alt="иконка еды" />
+              <p>NutriScore &reg;&nbsp;<strong>48</strong></p>
+            </div>
+            <div class="rating">
+              <img src="icons/star.png" alt="иконка звездочки" />
+              <p><strong>4.2</strong>&nbsp;рейтинг (671)</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="dish3">
-        <picture>
-          <source srcset="
+        <div class="dish3">
+          <picture>
+            <source srcset="
                                 image/x400/dish3_400.webp  400w,
                                 image/x800/dish3_800.webp  800w,
                                 image/x1200/dish3_1200.webp 1200w
-                              " type="image/webp" sizes="(max-width: 76.8rem) 100vw, 50vw" />
-          <img src="image/800/dish3_800.webp" alt="Блюдо 3" loading="lazy" class="d3_img" />
-        </picture>
-        <div class="dish3_container">
-          <div class="dish_h3_vegan">
-            <h3>ВЕГАНСКОЕ</h3>
+                              " type="image/webp"
+              sizes="(max-width: 76.8rem) 100vw, 50vw" />
+            <img src="image/800/dish3_800.webp" alt="Блюдо 3" loading="lazy"
+              class="d3_img" />
+          </picture>
+          <div class="dish3_container">
+            <div class="dish_h3_vegan">
+              <h3>ВЕГАНСКОЕ</h3>
+            </div>
+            <div class="dish_h3_paleo">
+              <h3>ПАЛЕО</h3>
+            </div>
           </div>
-          <div class="dish_h3_paleo">
-            <h3>ПАЛЕО</h3>
+          <div class="dish_h2">
+            <h2>Салат с авокадо</h2>
+          </div>
+          <div class="list">
+            <div class="calories">
+              <img src="icons/flame.png" alt="иконка киллокалории" />
+              <p><strong>400</strong>&nbsp;калорий</p>
+            </div>
+            <div class="nutri">
+              <img src="icons/eat.png" alt="иконка еды" />
+              <p>NutriScore &reg;&nbsp;<strong>92</strong></p>
+            </div>
+            <div class="rating">
+              <img src="icons/star.png" alt="иконка звездочки" />
+              <p><strong>4.8</strong>&nbsp;рейтинг (441)</p>
+            </div>
           </div>
         </div>
-        <div class="dish_h2">
-          <h2>Салат с авокадо</h2>
-        </div>
-        <div class="list">
-          <div class="calories">
-            <img src="icons/flame.png" alt="иконка киллокалории" />
-            <p><strong>400</strong>&nbsp;калорий</p>
-          </div>
-          <div class="nutri">
-            <img src="icons/eat.png" alt="иконка еды" />
-            <p>NutriScore &reg;&nbsp;<strong>92</strong></p>
-          </div>
-          <div class="rating">
-            <img src="icons/star.png" alt="иконка звездочки" />
-            <p><strong>4.8</strong>&nbsp;рейтинг (441)</p>
+        <div class="plus">
+          <h3>Подходит для любой диеты</h3>
+          <div class="diets">
+            <div>
+              <img src="icons/mark.png" class="mark" alt="иконка галочки" />
+              <p>Вегетарианская</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="иконка галочки" />
+              <p>Веганская</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="иконка галочки" />
+              <p>Пескетарианская</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="иконка галочки" />
+              <p>Без глютена</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="иконка галочки" />
+              <p>Без лактозы</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="иконка галочки" />
+              <p>Кето</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="иконка галочки" />
+              <p>Палео</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="иконка галочки" />
+              <p>Низкий FODMAP</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="иконка галочки" />
+              <p>Для детей</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="plus">
-        <h3>Подходит для любой диеты</h3>
-        <div class="diets">
-          <div>
-            <img src="icons/mark.png" class="mark" alt="иконка галочки" />
-            <p>Вегетарианская</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="иконка галочки" />
-            <p>Веганская</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="иконка галочки" />
-            <p>Пескетарианская</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="иконка галочки" />
-            <p>Без глютена</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="иконка галочки" />
-            <p>Без лактозы</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="иконка галочки" />
-            <p>Кето</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="иконка галочки" />
-            <p>Палео</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="иконка галочки" />
-            <p>Низкий FODMAP</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="иконка галочки" />
-            <p>Для детей</p>
-          </div>
-        </div>
+      <div class="all_receipes">
+        <a href>Посмотреть все рецепты &rarr;</a>
       </div>
-    </div>
-    <div class="all_receipes">
-      <a href>Посмотреть все рецепты &rarr;</a>
-    </div>
 
-    <div class="review_block" id="anchor_reviews">
-      <div class="left_profiles">
-        <div class="otzivi">
-          <div class="o_text">
-            <h3>ОТЗЫВЫ</h3>
+      <div class="review_block" id="anchor_reviews">
+        <div class="left_profiles">
+          <div class="otzivi">
+            <div class="o_text">
+              <h3>ОТЗЫВЫ</h3>
+            </div>
+            <div class="try_once">
+              <h2>
+                Попробовав однажды, вы уже не сможете вернуться к прежнему
+              </h2>
+            </div>
           </div>
-          <div class="try_once">
-            <h2>
-              Попробовав однажды, вы уже не сможете вернуться к прежнему
-            </h2>
-          </div>
-        </div>
-        <div class="peoples">
-          <div class="left_side">
-            <div class="f_p">
-              <div>
-                <picture>
-                  <source srcset="image/x80/Dave_80.jpg 80w,
+          <div class="peoples">
+            <div class="left_side">
+              <div class="f_p">
+                <div>
+                  <picture>
+                    <source srcset="image/x80/Dave_80.jpg 80w,
                                 image/x160/Dave_160.jpg 160w,
-                                image/x800/Dave_800.jpg 320w" type="image/jpeg" sizes="5rem">
-                  <img src="image/x160/Dave_160.jpg" alt="Аватарка Dave" loading="lazy" class="dave">
-                </picture>
+                                image/x800/Dave_800.jpg 320w" type="image/jpeg"
+                      sizes="5rem">
+                    <img src="image/x160/Dave_160.jpg" alt="Аватарка Dave"
+                      loading="lazy" class="dave">
+                  </picture>
+                </div>
+                <h2>
+                  Недорогие, полезные и вкусные блюда, даже без необходимости
+                  заказывать вручную! Это просто волшебно!
+                </h2>
+                <h3>- Dave Bryson</h3>
               </div>
-              <h2>
-                Недорогие, полезные и вкусные блюда, даже без необходимости
-                заказывать вручную! Это просто волшебно!
-              </h2>
-              <h3>- Dave Bryson</h3>
-            </div>
-            <div class="t_p">
-              <div>
-                <picture>
-                  <source srcset="image/x80/Steve_80.jpg 80w,
+              <div class="t_p">
+                <div>
+                  <picture>
+                    <source srcset="image/x80/Steve_80.jpg 80w,
                                 image/x160/Steve_160.jpg 160w,
-                                image/x320/Steve_320.jpg 320w" type="image/jpeg" sizes="5rem">
-                  <img src="image/x160/Steve_160.jpg" alt="Аватарка Steve" loading="lazy" class="steve">
-                </picture>
+                                image/x320/Steve_320.jpg 320w" type="image/jpeg"
+                      sizes="5rem">
+                    <img src="image/x160/Steve_160.jpg" alt="Аватарка Steve"
+                      loading="lazy" class="steve">
+                  </picture>
+                </div>
+                <h2>
+                  Omnifood — просто спасение! Я только что открыл компанию,
+                  поэтому у меня совсем нет времени на готовку. Теперь я не могу
+                  жить без ежедневного питания!
+                </h2>
+                <h3>- Steve Miller</h3>
               </div>
-              <h2>
-                Omnifood — просто спасение! Я только что открыл компанию,
-                поэтому у меня совсем нет времени на готовку. Теперь я не могу
-                жить без ежедневного питания!
-              </h2>
-              <h3>- Steve Miller</h3>
             </div>
-          </div>
-          <div class="right_side">
-            <div class="s_p">
-              <div>
-                <picture>
-                  <source srcset="image/x80/Ben_80.jpg 80w,
+            <div class="right_side">
+              <div class="s_p">
+                <div>
+                  <picture>
+                    <source srcset="image/x80/Ben_80.jpg 80w,
                                 image/x160/Ben_160.jpg 160w,
-                                image/x320/Ben_320.jpg 320w" type="image/jpeg" sizes="5rem">
-                  <img src="image/x160/Ben.jpg" alt="Аватарка Ben" loading="lazy" class="ben">
-                </picture>
+                                image/x320/Ben_320.jpg 320w" type="image/jpeg"
+                      sizes="5rem">
+                    <img src="image/x160/Ben.jpg" alt="Аватарка Ben"
+                      loading="lazy" class="ben">
+                  </picture>
+                </div>
+                <h2>
+                  Алгоритм искусственного интеллекта просто потрясающий, он
+                  каждый раз выбирает для меня правильные блюда. Удивительно,
+                  что больше не нужно беспокоиться о еде!
+                </h2>
+                <h3>- Ben Hadley</h3>
               </div>
-              <h2>
-                Алгоритм искусственного интеллекта просто потрясающий, он
-                каждый раз выбирает для меня правильные блюда. Удивительно,
-                что больше не нужно беспокоиться о еде!
-              </h2>
-              <h3>- Ben Hadley</h3>
-            </div>
-            <div class="fo_p">
-              <div>
-                <picture>
-                  <source srcset="image/x80/Hannah_80.jpg 80w,
+              <div class="fo_p">
+                <div>
+                  <picture>
+                    <source srcset="image/x80/Hannah_80.jpg 80w,
                                 image/x160/Hannah_160.jpg 160w,
-                                image/x320/Hannah_320.jpg 320w" type="image/jpeg" sizes="5rem">
-                  <img src="image/x160/Hannah_160.jpg" alt="Аватарка Hanna" loading="lazy" class="hanna">
-                </picture>
+                                image/x320/Hannah_320.jpg 320w"
+                      type="image/jpeg" sizes="5rem">
+                    <img src="image/x160/Hannah_160.jpg" alt="Аватарка Hanna"
+                      loading="lazy" class="hanna">
+                  </picture>
+                </div>
+                <h2>
+                  Я купила продукты Omnifood для всей семьи, и это сэкономило
+                  мне столько времени! К тому же, все продукты органические,
+                  веганские и без пластика.
+                </h2>
+                <h3>- Hannah Smith</h3>
               </div>
-              <h2>
-                Я купила продукты Omnifood для всей семьи, и это сэкономило
-                мне столько времени! К тому же, все продукты органические,
-                веганские и без пластика.
-              </h2>
-              <h3>- Hannah Smith</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right_gallery">
+          <div class="gallery">
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_1_400.jpg 400w,
+                                image/x800/gallery_1_800.jpg 800w,
+                                image/x1200/gallery_1_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_1_800.jpg" alt="Фотография блюда 1"
+                  loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_2_400.jpg 400w,
+                                image/x800/gallery_2_800.jpg 800w,
+                                image/x1200/gallery_2_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_2_800.jpg" alt="Фотография блюда 2"
+                  loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_3_400.jpg 400w,
+                                image/x800/gallery_3_800.jpg 800w,
+                                image/x1200/gallery_3_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_3_800.jpg" alt="Фотография блюда 3"
+                  loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_4_400.jpg 400w,
+                                image/x800/gallery_4_800.jpg 800w,
+                                image/x1200/gallery_4_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_4_800.jpg" alt="Фотография блюда 4"
+                  loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_5_400.jpg 400w,
+                                image/x800/gallery_5_800.jpg 800w,
+                                image/x1200/gallery_5_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/800/gallery_5_800.jpg" alt="Фотография блюда 5"
+                  loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_6_400.jpg 400w,
+                                image/x800/gallery_6_800.jpg 800w,
+                                image/x1200/gallery_6_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_6_800.jpg" alt="Фотография блюда 6"
+                  loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_7_400.jpg 400w,
+                                image/x800/gallery_7_800.jpg 800w,
+                                image/x1200/gallery_7_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_7_800.jpg" alt="Фотография блюда 7"
+                  loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_8_400.jpg 400w,
+                                image/x800/gallery_8_800.jpg 800w,
+                                image/x1200/gallery_8_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_8_800.jpg" alt="Фотография блюда 8"
+                  loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_9_400.jpg 400w,
+                                image/x800/gallery_9_800.jpg 800w,
+                                image/x1200/gallery_9_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_9_800.jpg" alt="Фотография блюда 9"
+                  loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_10_400.jpg 400w,
+                                image/x800/gallery_10_800.jpg 800w,
+                                image/x1200/gallery_10_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_10_800.jpg"
+                  alt="Фотография блюда 10" loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_11_400.jpg 400w,
+                                image/x800/gallery_11_800.jpg 800w,
+                                image/x1200/gallery_11_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_11_800.jpg"
+                  alt="Фотография блюда 11" loading="lazy">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="image/x400/gallery_12_400.jpg 400w,
+                                image/x800/gallery_12_800.jpg 800w,
+                                image/x1200/gallery_12_1200.jpg 1200w"
+                  type="image/jpeg" sizes="33vw">
+                <img src="image/x800/gallery_12_800.jpg"
+                  alt="Фотография блюда 12" loading="lazy">
+              </picture>
             </div>
           </div>
         </div>
       </div>
-      <div class="right_gallery">
-        <div class="gallery">
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_1_400.jpg 400w,
-                                image/x800/gallery_1_800.jpg 800w,
-                                image/x1200/gallery_1_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_1_800.jpg" alt="Фотография блюда 1" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_2_400.jpg 400w,
-                                image/x800/gallery_2_800.jpg 800w,
-                                image/x1200/gallery_2_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_2_800.jpg" alt="Фотография блюда 2" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_3_400.jpg 400w,
-                                image/x800/gallery_3_800.jpg 800w,
-                                image/x1200/gallery_3_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_3_800.jpg" alt="Фотография блюда 3" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_4_400.jpg 400w,
-                                image/x800/gallery_4_800.jpg 800w,
-                                image/x1200/gallery_4_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_4_800.jpg" alt="Фотография блюда 4" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_5_400.jpg 400w,
-                                image/x800/gallery_5_800.jpg 800w,
-                                image/x1200/gallery_5_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/800/gallery_5_800.jpg" alt="Фотография блюда 5" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_6_400.jpg 400w,
-                                image/x800/gallery_6_800.jpg 800w,
-                                image/x1200/gallery_6_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_6_800.jpg" alt="Фотография блюда 6" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_7_400.jpg 400w,
-                                image/x800/gallery_7_800.jpg 800w,
-                                image/x1200/gallery_7_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_7_800.jpg" alt="Фотография блюда 7" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_8_400.jpg 400w,
-                                image/x800/gallery_8_800.jpg 800w,
-                                image/x1200/gallery_8_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_8_800.jpg" alt="Фотография блюда 8" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_9_400.jpg 400w,
-                                image/x800/gallery_9_800.jpg 800w,
-                                image/x1200/gallery_9_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_9_800.jpg" alt="Фотография блюда 9" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_10_400.jpg 400w,
-                                image/x800/gallery_10_800.jpg 800w,
-                                image/x1200/gallery_10_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_10_800.jpg" alt="Фотография блюда 10" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_11_400.jpg 400w,
-                                image/x800/gallery_11_800.jpg 800w,
-                                image/x1200/gallery_11_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_11_800.jpg" alt="Фотография блюда 11" loading="lazy">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="image/x400/gallery_12_400.jpg 400w,
-                                image/x800/gallery_12_800.jpg 800w,
-                                image/x1200/gallery_12_1200.jpg 1200w" type="image/jpeg" sizes="33vw">
-              <img src="image/x800/gallery_12_800.jpg" alt="Фотография блюда 12" loading="lazy">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="price_block" id="anchor_price">
-      <div class="price">
-        <h3>ЦЕНЫ</h3>
-      </div>
-      <div class="eat_fine">
-        <h2>Питаться хорошо, не разоряясь</h2>
-      </div>
-    </div>
-    <div class="price_card">
-      <div class="p_card1">
-        <h3>STARTER</h3>
-        <span class="ruble_value"><span class="ruble">₽</span> 3990</span>
-        <h4>в месяц. Это всего 130 рублей за один прием пищи!</h4>
-        <div class="roster">
-          <div>
-            <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
-            <p>1 прием пищи в день</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
-            <p>Заказы принимаются с 11:00 до 21:00</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
-            <p>Доставка бесплатная</p>
-          </div>
-          <div>
-            <img src="icons/cross.png" class="cross" alt="Иконка крестика" />
-          </div>
+      <div class="price_block" id="anchor_price">
+        <div class="price">
+          <h3>ЦЕНЫ</h3>
         </div>
-        <div><button class="eat2">Начните питаться правильно</button></div>
-      </div>
-      <div class="p_card2">
-        <div class="accent">BEST VALUE</div>
-        <h3>COMPLETE</h3>
-        <span class="ruble_value"><span class="ruble">₽</span> 6490</span>
-        <h4>в месяц. Это всего 108 рублей за один прием пищи!</h4>
-        <div class="roster">
-          <div>
-            <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
-            <p>2 приема пищи в день</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
-            <p>Заказ 24/7</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
-            <p>Доставка бесплатная</p>
-          </div>
-          <div>
-            <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
-            <p>Получите доступ к новейшим рецептам</p>
-          </div>
+        <div class="eat_fine">
+          <h2>Питаться хорошо, не разоряясь</h2>
         </div>
-        <div><button class="eat2">Начните питаться правильно</button></div>
       </div>
-    </div>
+      <div class="price_card">
+        <div class="p_card1">
+          <h3>STARTER</h3>
+          <span class="ruble_value"><span class="ruble">₽</span> 3990</span>
+          <h4>в месяц. Это всего 130 рублей за один прием пищи!</h4>
+          <div class="roster">
+            <div>
+              <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
+              <p>1 прием пищи в день</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
+              <p>Заказы принимаются с 11:00 до 21:00</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
+              <p>Доставка бесплатная</p>
+            </div>
+            <div>
+              <img src="icons/cross.png" class="cross" alt="Иконка крестика" />
+            </div>
+          </div>
+          <div><button class="eat2">Начните питаться правильно</button></div>
+        </div>
+        <div class="p_card2">
+          <div class="accent">BEST VALUE</div>
+          <h3>COMPLETE</h3>
+          <span class="ruble_value"><span class="ruble">₽</span> 6490</span>
+          <h4>в месяц. Это всего 108 рублей за один прием пищи!</h4>
+          <div class="roster">
+            <div>
+              <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
+              <p><span class="bold">2 приема пищи</span> в день</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
+              <p>Заказ <span class="bold">24/7</span></p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
+              <p>Доставка бесплатная</p>
+            </div>
+            <div>
+              <img src="icons/mark.png" class="mark" alt="Иконка галочки" />
+              <p>Получите доступ к новейшим рецептам</p>
+            </div>
+          </div>
+          <div><button class="eat2">Начните питаться правильно</button></div>
+        </div>
+      </div>
 
-    <div class="tariffs_block">
-      <div class="tariffs_text">
-        Цены включают все применимые налоги. Вы можете отменить подписку в
-        любое время. Оба тарифных плана включают следующее:
+      <div class="tariffs_block">
+        <div class="tariffs_text">
+          Цены включают все применимые налоги. Вы можете отменить подписку в
+          любое время. Оба тарифных плана включают следующее:
+        </div>
+        <div class="tariffs">
+          <div class="t1">
+            <img src="icons/infinite.png" class="t_circle"
+              alt="Иконка бесконечности" />
+            <h2>Больше никогда не готовить!</h2>
+            <h3>
+              Наша подписка действует 365 дней в году, включая даже основные
+              праздники.
+            </h3>
+          </div>
+          <div class="t2">
+            <img src="icons/apple.png" class="t_circle" alt="Иконка яблока" />
+            <h2>Местные и органические продукты</h2>
+            <h3>
+              Наши повара используют для приготовления ваших блюд только
+              местные, свежие и органические продукты.
+            </h3>
+          </div>
+          <div class="t3">
+            <img src="icons/leaf.png" class="t_circle" alt="Иконка листочка" />
+            <h2>Без отходов</h2>
+            <h3>
+              Все наши партнеры используют только многоразове контейнеры для
+              упаковки ваших блюд.
+            </h3>
+          </div>
+          <div class="t4">
+            <img src="icons/pause.png" class="t_circle" alt="Иконка паузы" />
+            <h2>Приостановить в любое время</h2>
+            <h3>
+              Собираетесь в отпуск? Просто приостановите подписку, и мы вернем
+              вам деньги за неиспользованные дни.
+            </h3>
+          </div>
+        </div>
       </div>
-      <div class="tariffs">
-        <div class="t1">
-          <img src="icons/infinite.png" class="t_circle" alt="Иконка бесконечности" />
-          <h2>Больше никогда не готовить!</h2>
-          <h3>
-            Наша подписка действует 365 дней в году, включая даже основные
-            праздники.
-          </h3>
-        </div>
-        <div class="t2">
-          <img src="icons/apple.png" class="t_circle" alt="Иконка яблока" />
-          <h2>Местные и органические продукты</h2>
-          <h3>
-            Наши повара используют для приготовления ваших блюд только
-            местные, свежие и органические продукты.
-          </h3>
-        </div>
-        <div class="t3">
-          <img src="icons/leaf.png" class="t_circle" alt="Иконка листочка" />
-          <h2>Без отходов</h2>
-          <h3>
-            Все наши партнеры используют только многоразове контейнеры для
-            упаковки ваших блюд.
-          </h3>
-        </div>
-        <div class="t4">
-          <img src="icons/pause.png" class="t_circle" alt="Иконка паузы" />
-          <h2>Приостановить в любое время</h2>
-          <h3>
-            Собираетесь в отпуск? Просто приостановите подписку, и мы вернем
-            вам деньги за неиспользованные дни.
-          </h3>
-        </div>
-      </div>
-    </div>
 
-    <div class="dinner_free">
-      <div class="d_text">
-        <h2>Получите первый обед бесплатно!</h2>
-        <h3>
-          Здоровые, вкусные и простые в приготовлении блюда ждут вас. Начните
-          питаться правильно уже сегодня. Вы можете отменить или приостановить
-          подписку в любое время. А первый обед за наш счет!
-        </h3>
-        <form class="form_container">
-          <div class="form">
-            <p>Ваше имя</p>
-            <input type="text" placeholder="Введите имя" required />
-          </div>
-          <div class="form">
-            <p>Ваша почта</p>
-            <input type="email" placeholder="Введите почту" required />
-          </div>
-          <div class="form">
-            <p>Откуда вы получили информацию о нас?</p>
-            <input type="text" placeholder="Ссылка на источник" required />
-          </div>
-          <input type="submit" class="send" />
-        </form>
-      </div>
-      <div>
-        <picture>
-          <source srcset="
+      <div class="dinner_free">
+        <div class="d_text">
+          <h2>Получите первый обед бесплатно!</h2>
+          <h3>
+            Здоровые, вкусные и простые в приготовлении блюда ждут вас. Начните
+            питаться правильно уже сегодня. Вы можете отменить или приостановить
+            подписку в любое время. А первый обед за наш счет!
+          </h3>
+          <form class="form_container">
+            <div class="form">
+              <p>Ваше имя</p>
+              <input type="text" placeholder="Введите имя" required />
+            </div>
+            <div class="form">
+              <p>Ваша почта</p>
+              <input type="email" placeholder="Введите почту" required />
+            </div>
+            <div class="form" id="form_special">
+              <p>Откуда вы получили информацию о нас?</p>
+              <input type="text" placeholder="Ссылка на источник" required />
+            </div>
+            <input type="submit" class="send" />
+          </form>
+        </div>
+        <div>
+          <picture>
+            <source srcset="
                                 image/x400/dinner_400.webp  400w,
                                 image/x800/dinner_800.webp  800w,
                                 image/x1200/dinner_1200.webp 1200w
-                              " type="image/webp" sizes="(max-width: 76.8rem) 100vw, 50vw" />
-          <img src="image/x800/dinner_800.webp" alt="Изображение женщины с нашим блюдом" loading="lazy"
-            class="dinner_img" />
-        </picture>
+                              " type="image/webp"
+              sizes="(max-width: 76.8rem) 100vw, 50vw" />
+            <img src="image/x800/dinner_800.webp"
+              alt="Изображение женщины с нашим блюдом" loading="lazy"
+              class="dinner_img" />
+          </picture>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <div class="basement">
-      <div class="first_column">
-        <div class="b_logo">
-          <a href="#anchor_logo">
-            <picture>
-              <source srcset="
+    <footer>
+      <div class="basement">
+        <div class="first_column">
+          <div class="b_logo">
+            <a href="#anchor_logo">
+              <picture>
+                <source srcset="
                                 image/logo.webp  400w,
                                 image/logo.webp  800w,
                                 image/logo.webp 1200w
                               " type="image/webp" />
-              <img src="image/logo.webp" alt="Логотип компании" loading="lazy" class="logo_img" />
-            </picture>
-          </a>
+                <img src="image/logo.webp" alt="Логотип компании" loading="lazy"
+                  class="logo_img" />
+              </picture>
+            </a>
+          </div>
+          <div class="social">
+            <img src="icons/insta.png" class="insta"
+              alt="Логотип instagram" /><img src="icons/facebook.png"
+              class="facebook" alt="Логотип Facebook" /><img
+              src="icons/twitter.png" class="twitter"
+              alt="Логотип Twitter" />
+          </div>
+          <p>Авторские права © 2027 ООО "Омнифуд". Все права защищены.</p>
         </div>
-        <div class="social">
-          <img src="icons/insta.png" class="insta" alt="Логотип instagram" /><img src="icons/facebook.png"
-            class="facebook" alt="Логотип Facebook" /><img src="icons/twitter.png" class="twitter"
-            alt="Логотип Twitter" />
+        <div class="second_column">
+          <h2>Связаться с нами</h2>
+          <h3>ул. Примерная, д. 123, 2 этаж, Москва, 123456</h3>
+          <p>+7 (495) 123-45-67</p>
+          <p>hello@omnifood.com</p>
         </div>
-        <p>Авторские права © 2027 ООО "Омнифуд". Все права защищены.</p>
+        <div class="third_column">
+          <h2>Аккаунт</h2>
+          <p>Создать аккаунт</p>
+          <p>Войти</p>
+          <p>Приложение iOS</p>
+          <p class="android">Приложение Android</p>
+        </div>
+        <div class="fourth_column">
+          <h2>Компания</h2>
+          <p>О нас</p>
+          <p>Для бизнеса</p>
+          <p>Наши поставщики</p>
+          <p>Карьера</p>
+        </div>
+        <div class="fifth_column">
+          <h2>Ресурсы</h2>
+          <p>Сборник рецептов</p>
+          <p>Служба поддержки</p>
+          <p>Политика конфиденциальности и условия использования</p>
+        </div>
       </div>
-      <div class="second_column">
-        <h2>Связаться с нами</h2>
-        <h3>ул. Примерная, д. 123, 2 этаж, Москва, 123456</h3>
-        <p>+7 (495) 123-45-67</p>
-        <p>hello@omnifood.com</p>
-      </div>
-      <div class="third_column">
-        <h2>Аккаунт</h2>
-        <p>Создать аккаунт</p>
-        <p>Войти</p>
-        <p>Приложение iOS</p>
-        <p class="android">Приложение Android</p>
-      </div>
-      <div class="fourth_column">
-        <h2>Компания</h2>
-        <p>О нас</p>
-        <p>Для бизнеса</p>
-        <p>Наши поставщики</p>
-        <p>Карьера</p>
-      </div>
-      <div class="fifth_column">
-        <h2>Ресурсы</h2>
-        <p>Сборник рецептов</p>
-        <p>Служба поддержки</p>
-        <p>Политика конфиденциальности и условия использования</p>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 
 </html>

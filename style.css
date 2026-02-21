@@ -65,6 +65,14 @@ header {
   box-shadow: 0px 0px 10px black;
 }
 
+#menu-toggle,
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  order: 1;
+}
+
 .logo_img {
   height: 2rem;
   width: 16.4rem;
@@ -109,13 +117,13 @@ header {
 
 .left {
   height: auto;
-  flex: 1;
   width: 50%;
+  flex: 1;
 }
 
 .slogan {
-  display: flexbox;
-  margin: 10rem 0px 2rem 38rem;
+  display: flex;
+  margin: 4rem 0px 2rem 38rem;
   font-weight: bold;
   font-size: 4.8rem;
   height: 21.9rem;
@@ -123,12 +131,12 @@ header {
 }
 
 .under_text {
-  display: flexbox;
-  margin: 0px 0px 4rem 38rem;
+  display: flex;
+  margin: 0px 0px 2rem 38rem;
   color: var(--second_text);
   font-size: 2rem;
   font-weight: 400;
-  width: 46rem;
+  width: 57rem;
   line-height: 3.2rem;
 }
 
@@ -208,13 +216,15 @@ header {
 }
 
 .deliveries {
-  color: var(--first_text);
+  color: var(--second_text);
   margin: 2rem 0 0 2rem;
   font-size: 1.8rem;
+  font-weight: bolder;
 }
 
 .orange {
   color: var(--accent);
+  font-weight: 700;
 }
 
 .right {
@@ -226,7 +236,7 @@ header {
 }
 
 .coll {
-  margin: 10rem 0 4rem 10rem;
+  margin: 4rem 0 4rem 10rem;
   height: 50rem;
   width: 57rem;
 }
@@ -990,6 +1000,11 @@ h2 {
   text-indent: 0.25cm;
 }
 
+.bold {
+  font-weight: 500;
+  font-style: medium;
+}
+
 .mark {
   height: 2.4rem;
   width: 2.4rem;
@@ -1051,8 +1066,8 @@ h2 {
 
 .tariffs_text {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: var(--third_text);
   margin-top: 6rem;
 }
