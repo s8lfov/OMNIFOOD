@@ -1283,7 +1283,7 @@ footer {
   color: var(--second_text);
   font-size: 1.8rem;
   line-height: 1.8rem;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
