@@ -86,6 +86,7 @@
   .titles {
     padding: 0 12.5rem;
     gap: 1.6rem;
+    width: 39rem;
   }
 
   .explain {
@@ -1289,6 +1290,7 @@
   header {
     height: 6.4rem;
     width: 39rem;
+    padding: 0 2.559rem 0 2.559rem;
   }
 
   .logo {
@@ -1307,12 +1309,12 @@
     align-items: center;
     flex-direction: row-reverse;
     top: -1.4rem;
-    right: 40rem;
+    right: 0;
   }
 
   .hamburger {
     display: flex;
-    margin: 2.6rem 0 0 58rem;
+    margin: 2.6rem 0 0 0;
     visibility: visible;
     font-size: 2rem;
     cursor: pointer;
@@ -1320,14 +1322,15 @@
   }
 
   .nav-container {
-    visibility: hidden;
+    display: none;
+    width: 39rem;
   }
 
   #menu-toggle:checked ~ .nav-container {
     display: flex;
     position: absolute;
     top: 6.8rem;
-    left: 46rem;
+    left: -11rem;
     flex-direction: column;
     background-color: var(--white);
     visibility: visible;
@@ -1432,6 +1435,7 @@
 
   .right {
     align-items: flex-start;
+    width: 33.88rem;
   }
 
   .coll {
@@ -1445,7 +1449,8 @@
   .recomend {
     height: 4.078rem;
     width: 39rem;
-    padding-top: 6rem;
+    margin-top: 6rem;
+    padding: 0;
   }
 
   .r_text {
@@ -1494,6 +1499,10 @@
     width: 39rem;
   }
 
+  .titles {
+    width: 39rem;
+  }
+
   .hw_text {
     font-size: 1.28rem;
     line-height: 1.28rem;
@@ -1502,16 +1511,24 @@
   .explain {
     font-size: 2.88rem;
     line-height: 3.456rem;
+    width: 33.88rem;
+  }
+
+  .steps {
     width: 39rem;
   }
 
   .step {
     flex-direction: column-reverse;
-    padding: 8rem 0 0 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0 0 0;
+    width: 39rem;
   }
 
   .text {
     margin-top: 2rem;
+    width: 33.881rem;
   }
 
   .text > h3 {
@@ -1523,47 +1540,80 @@
     width: 33.881rem;
   }
 
+  .step_img1 img,
+  .step_img2 img,
+  .step_img3 img {
+    height: 23.981rem;
+    width: 11.858rem;
+  }
+
   .step_img1 {
-    padding-left: 8rem;
+    display: grid;
+    justify-items: end;
+    padding: 0;
+    margin: 0;
+    height: 23.981rem;
+    width: 39rem;
   }
 
   .step_img1:before {
-    top: 148rem;
-    left: 19rem;
+    top: 146rem;
+    left: 18rem;
+  }
+
+  .step_img1:after {
+    top: -12rem;
+    left: 180px;
   }
 
   .step.reverse {
     flex-direction: column-reverse;
+    width: 39rem;
+    padding-right: 0;
   }
 
   .step_img2 {
-    justify-content: space-around;
-    margin-right: 0;
+    display: grid;
+    justify-items: end;
+    padding: 0;
+    margin: 0;
+    height: 23.981rem;
+    width: 39rem;
   }
 
   .step_img2::after {
-    top: 8rem;
-    left: -25rem;
+    top: -12rem;
+    left: 18rem;
   }
 
   .step_img2:before {
-    top: 230rem;
-    right: -12rem;
+    top: 210rem;
+    right: -11rem;
   }
 
   .step_img3 {
-    padding-left: 8rem;
+    display: grid;
+    justify-items: end;
+    padding: 0;
+    margin: 0;
+    height: 23.981rem;
+    width: 39rem;
+  }
+
+  .step_img3:after {
+    top: -12rem;
+    left: 18rem;
   }
 
   .step_img3:before {
-    top: 302rem;
-    left: 19rem;
+    top: 271rem;
+    left: 18rem;
   }
 
   /* RECIPES */
 
   .recipes {
-    margin-top: 120rem;
+    margin-top: 80rem;
   }
 
   .recipes_text > h3 {
@@ -1641,6 +1691,14 @@
     width: 39rem;
   }
 
+  .o_text {
+    width: 33.88rem;
+  }
+
+  .try_once {
+    width: 33.88rem;
+  }
+
   .try_once h2 {
     width: 33.88rem;
   }
@@ -1652,6 +1710,11 @@
 
   .peoples {
     flex-direction: column;
+    width: 33.88rem;
+  }
+
+  .left_profiles {
+    width: 39rem;
   }
 
   .f_p {
@@ -1676,14 +1739,19 @@
 
   .gallery {
     height: 29.65rem;
-    width: 39rem;
+    width: max-content;
     grid-template-columns: repeat(4, 8.391rem);
     grid-template-rows: repeat(3, 8.391rem);
     gap: 1rem;
   }
 
   .right_gallery {
-    margin: 52rem 0 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 29.65rem;
+    width: 39rem;
+    margin: 54rem 0 0 0;
   }
 
   .gallery div {
@@ -1701,22 +1769,31 @@
   .price_block {
     height: 9.586rem;
     width: 39rem;
+    margin: 10rem 0 10rem 0;
+    align-items: center;
+    justify-content: center;
   }
 
   .price h3 {
     width: 33.88rem;
   }
 
+  .eat_fine {
+    width: 33.88rem;
+  }
+
   .eat_fine h2 {
     height: 7rem;
-    width: 39rem;
+    width: 33.88rem;
   }
 
   .price_card {
     flex-direction: column;
     height: 106.781rem;
     width: 39rem;
-    margin: 0 0 0 3rem;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
   }
 
   .p_card1,
@@ -1751,12 +1828,20 @@
   }
 
   .tariffs {
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     height: 86.268rem;
     width: 39rem;
-    margin: 8rem 0 14rem 4rem;
-    align-items: flex-start;
+    margin: 8rem 0 14rem 0;
     gap: 4rem;
+  }
+
+  .t1,
+  .t2,
+  .t3,
+  .t4 {
+    width: 33.88rem;
   }
 
   .t1 h2,
