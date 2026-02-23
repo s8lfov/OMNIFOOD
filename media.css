@@ -928,6 +928,7 @@
 
   .recipes {
     margin-top: 10rem;
+    width: 76.8rem;
   }
 
   .recipes_text > h3 {
@@ -945,7 +946,11 @@
   }
 
   .dishes {
-    padding: 0 0 0 10rem;
+    padding: 0;
+    width: 76.8rem;
+    place-items: center;
+    grid-template-columns: repeat(2, 21.333rem);
+    gap: 8rem;
   }
 
   .dish1,
@@ -1003,6 +1008,10 @@
     line-height: 0.96rem;
   }
 
+  .plus {
+    width: 21.333rem;
+  }
+
   .plus h3 {
     font-size: 1.92rem;
     line-height: 2.3rem;
@@ -1019,6 +1028,10 @@
   .mark {
     height: 2.4rem;
     width: 2.4rem;
+  }
+
+  .all_receipes {
+    width: 76.8rem;
   }
 
   /* REVIEWS */
@@ -1736,6 +1749,7 @@
 
   .recipes {
     margin-top: 50rem;
+    width: 39rem;
   }
 
   .recipes_text > h3 {
@@ -1756,9 +1770,10 @@
 
   .dishes {
     grid-template-columns: repeat(1, 1fr);
-    padding: 0 0 0 3rem;
+    padding: 0;
     gap: 4rem;
     margin-bottom: 2rem;
+    width: 39rem;
   }
 
   .dish1,
@@ -1804,6 +1819,7 @@
   .all_receipes {
     font-size: 1.44rem;
     line-height: 1.44rem;
+    width: 39rem;
   }
 
   /* REVIEWS */
