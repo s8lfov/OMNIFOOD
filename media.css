@@ -353,27 +353,39 @@
     padding: 4rem 0 4rem 2rem;
   }
 
+  .step_img1,
+  .step_img2,
+  .step_img3 {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
   .step_img1 {
     padding-left: 12rem;
+    width: max-content;
   }
 
   .step_img1:before {
-    top: 124rem;
-    left: 77rem;
+    top: 18rem;
+    left: 21rem;
   }
 
   .step_img2:before {
-    top: 172rem;
-    right: 56rem;
+    top: 17rem;
+    right: 2rem;
   }
 
   .step_img3 {
     padding-left: 12rem;
+    width: max-content;
   }
 
   .step_img3:before {
-    top: 218rem;
-    left: 76rem;
+    top: 18rem;
+    left: 21rem;
   }
 
   /* RECIPES */
@@ -429,7 +441,7 @@
   .t_p,
   .s_p,
   .fo_p {
-    height: 33.225rem;
+    height: max-content;
     width: 21.68rem;
   }
 
@@ -438,17 +450,17 @@
   }
 
   .t_p {
-    height: 30.328rem;
+    height: max-content;
     margin: 12rem 0 12rem 2rem;
   }
 
   .s_p {
-    height: 33.278rem;
+    height: max-content;
     margin: 4rem 0 4rem 6rem;
   }
 
   .fo_p {
-    height: 30.328rem;
+    height: max-content;
     margin: 8rem 0 8rem 6rem;
   }
 
@@ -478,11 +490,14 @@
 
   .price_block {
     margin: 10rem 0 10rem 4rem;
+    width: max-content;
   }
 
   .price_card {
-    margin: 0 0 0 10rem;
-    justify-content: flex-start;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    width: 102.4rem;
   }
 
   .tariffs_text {
@@ -618,12 +633,12 @@
     align-items: center;
     flex-direction: row-reverse;
     top: -1.4rem;
-    right: 2.559rem;
+    right: 0;
   }
 
   .hamburger {
     display: flex;
-    margin: 3rem 0 0 56rem;
+    margin: 3rem 0 0 0;
     visibility: visible;
     font-size: 2.6rem;
     cursor: pointer;
@@ -631,14 +646,15 @@
   }
 
   .nav-container {
-    visibility: hidden;
+    display: none;
+    width: 76.8rem;
   }
 
   #menu-toggle:checked ~ .nav-container {
     display: flex;
     position: absolute;
     top: 7.4rem;
-    left: 39rem;
+    left: -17rem;
     flex-direction: column;
     background-color: var(--white);
     visibility: visible;
@@ -783,8 +799,19 @@
     width: 10.264rem;
   }
 
+  /* HOW WORK */
+
   .how_work {
     font-size: 1.28rem;
+    width: 76.8rem;
+  }
+
+  .titles {
+    width: 76.8rem;
+  }
+
+  .hw_text {
+    width: 71.68rem;
   }
 
   .explain {
@@ -794,8 +821,34 @@
     line-height: 3.456rem;
   }
 
+  .steps {
+    width: 76.8rem;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .steps {
+    width: 76.8rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
   .step {
+    align-items: center;
+    justify-content: center;
     padding: 8rem 0 4rem 2rem;
+    width: 76.8rem;
+  }
+
+  .step.reverse {
+    padding-right: 2rem;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .text > h2 {
@@ -815,35 +868,66 @@
     width: 33.92rem;
   }
 
+  .step_img1,
+  .step_img2,
+  .step_img3 {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .step_img1 img,
+  .step_img2 img,
+  .step_img3 img {
+    height: 24.009rem;
+    width: 11.872rem;
+  }
+
+  .step_img1:after {
+    height: 15.264rem;
+    width: 15.264rem;
+    left: -6rem;
+  }
+
   .step_img1:before {
-    top: 146rem;
-    left: 57rem;
-  }
-
-  .step.reverse {
-    padding-right: 26rem;
-  }
-
-  .step_img2 {
-    margin-right: -10rem;
+    top: 13rem;
+    left: 19.4rem;
+    height: 20.353rem;
+    width: 20.353rem;
   }
 
   .step_img2:before {
-    top: 200rem;
-    right: 26rem;
+    top: 13rem;
+    right: 1rem;
+    height: 20.353rem;
+    width: 20.353rem;
   }
 
   .step_img2::after {
-    top: 8rem;
+    top: 4rem;
+    left: -6rem;
+    height: 15.264rem;
+    width: 15.264rem;
+  }
+
+  .step_img3:after {
+    height: 15.264rem;
+    width: 15.264rem;
+    left: -6rem;
+    top: 4rem;
   }
 
   .step_img3:before {
-    top: 246rem;
-    left: 57rem;
+    top: 13rem;
+    left: 19.3rem;
+    height: 20.353rem;
+    width: 20.353rem;
   }
 
   .recipes {
-    margin-top: 50rem;
+    margin-top: 10rem;
   }
 
   .recipes_text > h3 {
@@ -1010,15 +1094,20 @@
   }
 
   .right_gallery {
-    margin: 10rem 0 10rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26.455rem;
+    width: 76.8rem;
+    margin: 10rem 0 10rem 0;
   }
 
   .gallery {
     height: 26.455rem;
-    width: 76.8rem;
+    width: max-content;
     grid-template-columns: repeat(6, 11.306rem);
     grid-template-rows: repeat(2, 11.306rem);
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .gallery div {
@@ -1047,9 +1136,19 @@
 
   /* PRICE */
 
+  .price_block {
+    height: 6.159rem;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+  }
+
   .price_card {
+    align-items: center;
+    justify-content: center;
     height: 54.032rem;
     width: 76.8rem;
+    margin: 0;
   }
 
   .p_card1,
@@ -1115,6 +1214,12 @@
     width: 71.681rem;
     text-align: center;
     padding-left: 6rem;
+  }
+
+  .t_circle {
+    height: 5.119rem;
+    width: 5.119rem;
+    padding: 1.4rem;
   }
 
   .tariffs {
@@ -1506,6 +1611,7 @@
   .hw_text {
     font-size: 1.28rem;
     line-height: 1.28rem;
+    width: 33.88rem;
   }
 
   .explain {
@@ -1516,6 +1622,7 @@
 
   .steps {
     width: 39rem;
+    margin-top: 40rem;
   }
 
   .step {
@@ -1549,32 +1656,47 @@
 
   .step_img1 {
     display: grid;
-    justify-items: end;
+    justify-content: center;
     padding: 0;
     margin: 0;
     height: 23.981rem;
     width: 39rem;
   }
 
-  .step_img1:before {
-    top: 146rem;
-    left: 18rem;
+  .step_img1::before,
+  .step_img2::before,
+  .step_img3:before {
+    height: 20.328rem;
+    width: 20.328rem;
   }
 
-  .step_img1:after {
-    top: -12rem;
-    left: 180px;
+  .step_img1::after,
+  .step_img2::after,
+  .step_img3:after {
+    height: 15.246rem;
+    width: 15.246rem;
+  }
+
+  .step_img1::after {
+    top: -11rem;
+    left: 5.7rem;
+  }
+
+  .step_img1::before {
+    top: 13rem;
+    left: 17.6rem;
   }
 
   .step.reverse {
     flex-direction: column-reverse;
     width: 39rem;
     padding-right: 0;
+    margin-top: 0;
   }
 
   .step_img2 {
     display: grid;
-    justify-items: end;
+    justify-content: center;
     padding: 0;
     margin: 0;
     height: 23.981rem;
@@ -1582,18 +1704,18 @@
   }
 
   .step_img2::after {
-    top: -12rem;
-    left: 18rem;
+    top: -11rem;
+    left: 6rem;
   }
 
   .step_img2:before {
-    top: 210rem;
-    right: -11rem;
+    top: 13rem;
+    right: 1rem;
   }
 
   .step_img3 {
     display: grid;
-    justify-items: end;
+    justify-content: center;
     padding: 0;
     margin: 0;
     height: 23.981rem;
@@ -1601,19 +1723,19 @@
   }
 
   .step_img3:after {
-    top: -12rem;
-    left: 18rem;
+    top: -11rem;
+    left: 5.6rem;
   }
 
   .step_img3:before {
-    top: 271rem;
-    left: 18rem;
+    top: 13rem;
+    left: 17.6rem;
   }
 
   /* RECIPES */
 
   .recipes {
-    margin-top: 80rem;
+    margin-top: 50rem;
   }
 
   .recipes_text > h3 {
@@ -1835,6 +1957,13 @@
     width: 39rem;
     margin: 8rem 0 14rem 0;
     gap: 4rem;
+  }
+
+  .t_circle {
+    height: 5.119rem;
+    width: 5.119rem;
+    font-size: 2.559rem;
+    padding: 1.3rem;
   }
 
   .t1,
