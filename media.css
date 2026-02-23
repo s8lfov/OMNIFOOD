@@ -1312,6 +1312,9 @@
   .dinner_free {
     height: 63.526rem;
     width: 71.681rem;
+    justify-content: center;
+    margin: 8rem 0 14rem 50%;
+    transform: translate(-50%);
   }
 
   .d_text {
