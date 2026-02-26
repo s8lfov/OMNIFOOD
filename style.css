@@ -1,7 +1,5 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
-
 :root {
   --accent: #e67e22;
   --dark_accent: #cf711f;
@@ -9,12 +7,46 @@
   --first_text: #333;
   --second_text: #555;
   --third_text: #6f6f6f;
+  --fourth_text: #888888;
+  --brown_text: #45260a;
   --white: #ffffff;
   --contrast: #dddddd;
   --green: #51cf66;
   --light_green: #94d82d;
   --yellow: #ffd43b;
   --footer_border: #eeeeee;
+  --medium-font: "Medium";
+  --bold-font: "Bold";
+  --regular-font: "Regular";
+  --semibold-font: "SemiBold";
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url(fonts/Rubik-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(fonts/Rubik-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: url(fonts/Rubik-SemiBold.woff2);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(fonts/Rubik-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
 }
 
 * {
@@ -28,7 +60,6 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
   line-height: 1;
   color: #333;
   font-size: 1.6rem;
@@ -63,6 +94,7 @@ header {
   width: auto;
   background-color: var(--white);
   box-shadow: 0px 0px 10px black;
+  font-family: var(--medium-font);
 }
 
 #menu-toggle,
@@ -124,7 +156,7 @@ header {
 .slogan {
   display: flex;
   margin: 4rem 0px 2rem 38rem;
-  font-weight: bold;
+  font-family: var(--bold-font);
   font-size: 4.8rem;
   height: 21.9rem;
   width: 54rem;
@@ -134,8 +166,8 @@ header {
   display: flex;
   margin: 0px 0px 2rem 38rem;
   color: var(--second_text);
+  font-family: var(--regular-font);
   font-size: 2rem;
-  font-weight: 400;
   width: 57rem;
   line-height: 3.2rem;
 }
@@ -153,6 +185,7 @@ header {
   margin: 3rem 0 4rem 38rem;
   color: var(--white);
   background-color: var(--accent);
+  font-family: var(--semibold-font);
   font-size: 2rem;
   line-height: 2rem;
   height: 5.2rem;
@@ -171,8 +204,9 @@ header {
 .more {
   display: inline-flex;
   margin: 3rem 0 4rem 2rem;
-  color: var(--first_text);
+  color: var(--second_text);
   background-color: var(--white);
+  font-family: var(--semibold-font);
   font-size: 2rem;
   line-height: 2rem;
   height: 5.2rem;
@@ -219,12 +253,12 @@ header {
   color: var(--second_text);
   margin: 2rem 0 0 2rem;
   font-size: 1.8rem;
-  font-weight: bolder;
+  font-family: var(--semibold-font);
 }
 
 .orange {
   color: var(--accent);
-  font-weight: 700;
+  font-family: var(--bold-font);
 }
 
 .right {
@@ -256,7 +290,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--second_text);
+  color: var(--fourth_text);
+  font-family: var(--medium-font);
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
 }
@@ -329,6 +364,7 @@ header {
 .hw_text {
   color: var(--dark_accent);
   font-size: 1.6rem;
+  font-family: var(--medium-font);
 }
 
 .explain {
@@ -336,6 +372,7 @@ header {
   color: var(--first_text);
   font-size: 4.4rem;
   font-weight: bold;
+  font-family: var(--bold-font);
 }
 
 /* Steps */
@@ -354,11 +391,13 @@ header {
 .text > h2 {
   font-size: 8.6rem;
   color: var(--contrast);
+  font-family: var(--semibold-font);
 }
 
 .text > h3 {
   font-size: 3rem;
   color: var(--first_text);
+  font-family: var(--bold-font);
   width: 54rem;
   line-height: 3.6rem;
   padding: 2rem 0 2rem 0.5rem;
@@ -367,6 +406,7 @@ header {
 .text > p {
   font-size: 1.8rem;
   color: var(--second_text);
+  font-family: var(--regular-font);
   width: 54rem;
   padding-left: 0.5rem;
   line-height: 3.24rem;
@@ -511,6 +551,7 @@ header {
 .recipes_text > h3 {
   color: var(--accent);
   font-size: 1.6rem;
+  font-family: var(--medium-font);
   line-height: 1.6rem;
   letter-spacing: 0.1rem;
   margin-bottom: 1rem;
@@ -519,6 +560,7 @@ header {
 .recipes_text > h2 {
   color: var(--first_text);
   font-size: 4.4rem;
+  font-family: var(--bold-font);
   line-height: 5.2rem;
   width: 100rem;
   text-align: center;
@@ -575,6 +617,7 @@ header {
   height: 2rem;
   width: 12.9rem;
   font-size: 1.2rem;
+  font-family: var(--semibold-font);
   padding: 0.4rem;
   background-color: var(--green);
   border-radius: 1rem;
@@ -585,6 +628,7 @@ header {
 
 .dish_h2 h2 {
   font-size: 2.4rem;
+  font-family: var(--semibold-font);
   color: #333;
   margin: 0 0 2rem 2.8rem;
 }
@@ -605,6 +649,7 @@ header {
   display: flex;
   align-items: center;
   color: var(--second_text);
+  font-family: var(--regular-font);
   gap: 0.8rem;
 }
 
@@ -650,6 +695,7 @@ header {
 .plus h3 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  font-family: var(--bold-font);
 }
 
 .diets div {
@@ -658,6 +704,7 @@ header {
   font-size: 1.8rem;
   line-height: 2.2rem;
   color: var(--second_text);
+  font-family: var(--regular-font);
   gap: 1.6rem;
   margin: 2.4rem 0;
 }
@@ -697,12 +744,14 @@ h2 {
 
 .o_text {
   color: var(--dark_accent);
+  font-family: var(--medium-font);
   padding: 20rem 0 4rem 6rem;
 }
 
 .try_once {
   color: var(--first_text);
   font-size: 2.4rem;
+  font-family: var(--bold-font);
   width: 83.4rem;
   padding-left: 6rem;
 }
@@ -724,6 +773,7 @@ h2 {
   width: 86.4rem;
   display: flex;
   flex-direction: row;
+  font-family: var(--regular-font);
 }
 
 /* LEFT SIDE OF PERSONS */
@@ -917,11 +967,13 @@ h2 {
 .price h3 {
   color: var(--dark_accent);
   line-height: 1.6rem;
+  font-family: var(--medium-font);
 }
 
 .eat_fine h2 {
   color: #333;
   font-size: 4.4rem;
+  font-family: var(--bold-font);
   line-height: 5.2rem;
 }
 
@@ -952,6 +1004,7 @@ h2 {
 .p_card2 h3 {
   color: var(--dark_accent);
   font-size: 2rem;
+  font-family: var(--semibold-font);
   line-height: 2rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -964,18 +1017,21 @@ h2 {
 .ruble_value {
   color: var(--first_text);
   font-size: 6.2rem;
+  font-family: var(--semibold-font);
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
 .ruble {
   font-size: 3rem;
+  font-family: var(--medium-font);
   font-weight: bold;
 }
 
 .p_card1 h4,
 .p_card2 h4 {
   color: var(--third_text);
+  font-family: var(--regular-font);
   padding: 0 2rem 0 2rem;
   line-height: 2.6rem;
   font-weight: normal;
@@ -998,11 +1054,11 @@ h2 {
 
 .roster p {
   text-indent: 0.25cm;
+  font-family: var(--regular-font);
 }
 
 .bold {
-  font-weight: 500;
-  font-style: medium;
+  font-family: var(--medium-font);
 }
 
 .mark {
@@ -1025,6 +1081,7 @@ h2 {
 .accent {
   position: relative;
   text-align: center;
+  font-family: var(--bold-font);
   padding: 0.5rem;
   top: 8rem;
   left: 15.4rem;
@@ -1039,6 +1096,7 @@ h2 {
   color: var(--white);
   background-color: var(--accent);
   font-size: 2rem;
+  font-family: var(--semibold-font);
   line-height: 2rem;
   font-weight: 600;
   height: 7.2rem;
@@ -1069,6 +1127,7 @@ h2 {
   justify-content: center;
   align-items: center;
   color: var(--third_text);
+  font-family: var(--regular-font);
   margin-top: 6rem;
 }
 
@@ -1113,7 +1172,7 @@ h2 {
 .t4 h2 {
   color: var(--first_text);
   font-size: 2.4rem;
-  font-weight: 700;
+  font-family: var(--bold-font);
   line-height: 2.4rem;
   width: 26rem;
 }
@@ -1126,8 +1185,8 @@ h2 {
 .t2 h3,
 .t3 h3,
 .t4 h3 {
-  color: var(--third_text);
-  font-weight: normal;
+  color: var(--second_text);
+  font-family: var(--regular-font);
   width: 27rem;
   padding-top: 2rem;
   line-height: 3.24rem;
@@ -1161,17 +1220,18 @@ h2 {
 }
 
 .d_text h2 {
-  color: var(--first_text);
+  color: var(--brown_text);
   font-size: 4.4rem;
+  font-family: var(--bold-font);
   width: 60rem;
   line-height: 5.28rem;
   margin-bottom: 2rem;
 }
 
 .d_text h3 {
-  color: var(--first_text);
+  color: var(--brown_text);
   font-size: 1.8rem;
-  font-weight: normal;
+  font-family: var(--regular-font);
   line-height: 3.24rem;
   width: 58rem;
 }
@@ -1190,8 +1250,8 @@ h2 {
 }
 
 .form p {
-  color: var(--first_text);
-  font-weight: 500;
+  color: var(--brown_text);
+  font-family: var(--medium-font);
   line-height: 1.6rem;
   width: 28rem;
 }
@@ -1211,7 +1271,7 @@ h2 {
 }
 
 .send {
-  background-color: var(--first_text);
+  background-color: var(--brown_text);
   color: var(--bright_background);
   font-size: 2rem;
   font-weight: 600;
@@ -1276,14 +1336,15 @@ footer {
 
 .basement p {
   color: var(--third_text);
+  font-family: var(--regular-font);
   width: 24rem;
 }
 
 .basement h2 {
   color: var(--second_text);
   font-size: 1.8rem;
+  font-family: var(--medium-font);
   line-height: 1.8rem;
-  font-weight: 500;
   margin-bottom: 1rem;
 }
 
@@ -1291,7 +1352,7 @@ footer {
   color: var(--second_text);
   line-height: 2.56rem;
   font-size: 1.6rem;
-  font-weight: normal;
+  font-family: var(--regular-font);
   width: 20rem;
   margin-bottom: 1rem;
 }

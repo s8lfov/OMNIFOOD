@@ -77,4 +77,8 @@
 ## Скриншоты результатов выполненной оптимизации
 
 <img src="Lighthouse 1.PNG"><br>
-<img src="Lighthouse 2.PNG">
+<img src="Lighthouse 2.PNG"><br>
+
+## УП.09.03 - день 1
+
+<img src="certificate.png">

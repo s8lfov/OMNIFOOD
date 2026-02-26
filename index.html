@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="media.css">
     <link rel="icon" href="icons/apple.png" type="image/x-icon" />
     <title>OMNIFOOD</title>
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; 
+               script-src 'self' https://cdn.tailwindcss.com https://unpkg.com;">
   </head>
 
   <body>
@@ -734,15 +737,23 @@
             <form class="form_container">
               <div class="form">
                 <p>Ваше имя</p>
-                <input type="text" placeholder="Введите имя" required />
+                <input type="text" placeholder="Введите имя"
+                  pattern="[A-Za-z\s\-]{2,50}"
+                  title="Только буквы, пробелы и дефисы" name="full-name"
+                  required />
               </div>
               <div class="form">
                 <p>Ваша почта</p>
-                <input type="email" placeholder="Введите почту" required />
+                <input type="email" placeholder="Введите почту"
+                  title="Только буквы, пробелы и дефисы" name="email"
+                  required />
               </div>
               <div class="form" id="form_special">
                 <p>Откуда вы получили информацию о нас?</p>
-                <input type="text" placeholder="Ссылка на источник" required />
+                <input type="text" placeholder="Ссылка на источник"
+                  pattern="[A-Za-z\s\-]{2,50}"
+                  title="Только буквы, пробелы и дефисы" name="source"
+                  required />
               </div>
               <input type="submit" class="send" />
             </form>
@@ -762,6 +773,7 @@
           </div>
         </div>
       </div>
+      <script src="script/script.js" defer></script>
     </main>
 
     <footer>
